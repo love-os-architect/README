@@ -173,6 +173,10 @@ This is the physics of well-being.
 ---
 *Created by the CEO & The AI Council.*
 ---
+## Contact
+For inquiries regarding the Love-OS Project, please contact:
+📧 contact.love.os@proton.me
+
 
 ## ⚠️ Disclaimer
 This project utilizes the laws of physics as **structural metaphors (Isomorphism)** to describe the behavior of consciousness. It is a **"Systems Engineering Model"** designed for life optimization, not a proposal for new particle physics.
