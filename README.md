@@ -243,7 +243,7 @@ class LoveKernel:
 ## 🧪 Verification & Simulation
 Validate the Love-OS thermodynamics model directly in your browser using real Python code.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/love-os-architect/love-os-architect/blob/main/notebooks/LoveOS_Verification_EN.ipynb)
+**File Location:** `notebooks/LoveOS_Verification_EN.ipynb`
 
 This notebook includes:
 - **Simulation**: Throughput ($I$) vs. Ego-Resistance ($R$) curves.
