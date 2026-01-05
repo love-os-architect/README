@@ -294,6 +294,15 @@ $$A_{ij} = \frac{M^\alpha S^\beta C^\gamma}{(1+\rho R_{avg})(1+\theta L_{avg})}$
 👉 **[Run the Simulation](./notebooks/LoveOS_Relationship.ipynb)** to see how "Ego-Resistance" destroys relationships, and how "Zero-Latency" creates a superconducting connection.
 
 
+## ❤️ Resonance Engine
+Love-OS calculates "Chemistry" as physical resonance.
+
+$$A(\omega) = \frac{E}{\sqrt{(\omega_0^2 - \omega^2)^2 + (d\omega)^2}}$$
+
+- **$\omega_0 \approx \omega$**: When frequencies align, attraction maximizes (Resonance).
+- **$d \to 0$**: Low friction (Trust) amplifies the resonance peak.
+
+
 ---
 Copyright (c) Love-OS Architect. All rights reserved.
 
