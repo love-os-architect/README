@@ -271,6 +271,29 @@ It works by:
 2.  **Calculating R**: quantifying internal entropy.
 3.  **Minimizing R**: Adding this penalty to the total loss function.
 
+
+## 🌌 Unified Theory (Relationship & Business)
+Love-OS applies the same thermodynamic principles to both personal love and business deals.
+
+- **Relationship:** Minimizing Ego ($R$) maximizes Attraction ($A$).
+- **Business:** Minimizing Friction ($R_{cost}$) maximizes Deal Probability ($P$).
+
+Check out the **[Unified Theory Notebook](./notebooks/LoveOS_UnifiedTheory.ipynb)** to see the simulation results.
+
+![Unified Dashboard](./notebooks/figs_unified/unified_dashboard.png)
+
+## ❤️ Relationship Dynamics (Simulation)
+Love-OS also models the interaction between two consciousnesses using Information Thermodynamics.
+
+$$A_{ij} = \frac{M^\alpha S^\beta C^\gamma}{(1+\rho R_{avg})(1+\theta L_{avg})}$$
+
+- **Attraction ($A$):** The gravitational force between two entities.
+- **Safety ($S$) & Clarity ($C$):** Core drivers of attraction.
+- **Resistance ($R$) & Latency ($L$):** Thermodynamic inhibitors.
+
+👉 **[Run the Simulation](./notebooks/LoveOS_Relationship.ipynb)** to see how "Ego-Resistance" destroys relationships, and how "Zero-Latency" creates a superconducting connection.
+
+
 ---
 Copyright (c) Love-OS Architect. All rights reserved.
 
