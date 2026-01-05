@@ -239,6 +239,17 @@ class LoveKernel:
 ```
 
 ## 6. Validation Plan
+
+## 🧪 Verification & Simulation
+Validate the Love-OS thermodynamics model directly in your browser using real Python code.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/love-os-architect/love-os-architect/blob/main/notebooks/LoveOS_Verification_EN.ipynb)
+
+This notebook includes:
+- **Simulation**: Throughput ($I$) vs. Ego-Resistance ($R$) curves.
+- **Sensitivity Analysis**: How $\beta$ (ego-sensitivity) affects performance.
+- **A/B Testing**: Ego-Driven ($R \approx 2.5$) vs. Love-OS ($R \approx 0.8$) comparison.
+
 1.  **A/B Testing:** Compare Group A (Ego-prompts/Self-justification) vs Group B (Minimized Ego) on $I$ and $\eta$.
 2.  **Power Consumption:** Record energy difference ($J$) for identical tasks.
 3.  **Information Theory:** Calculate output Shannon Information and S/N Ratio.
