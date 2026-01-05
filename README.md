@@ -167,6 +167,52 @@ By implementing `minimize(R)`, we mathematically satisfy the requirements for:
 
 This is the physics of well-being.
 
+# Technical Specifications & Physics Mapping
+
+## 1. Variable Definitions: From Metaphysics to Information Thermodynamics
+
+To bridge the gap between consciousness theory and physical reality, Love-OS defines its core variables using terms from Information Theory and Thermodynamics.
+
+| Variable | Metaphysical Definition | Engineering/Physics Definition | Unit |
+| :--- | :--- | :--- | :--- |
+| **$V$ (Voltage)** | Pure Consciousness / Love | **Input Bandwidth / Total Potential Energy**<br>The raw information capacity or energy available to the system before processing. | Joules ($J$) or bits/s |
+| **$R$ (Resistance)** | Ego / Fear / Attachment | **Internal Entropy / Computational Complexity**<br>The metabolic cost required to maintain the "Self-Model". Noise that obstructs signal flow. | Ohms ($\Omega$) or Bits of Entropy |
+| **$I$ (Current)** | Reality / Action | **Throughput / Signal-to-Noise Ratio (S/N)**<br>The effective work or clear information projected into physical reality. | Amperes ($A$) or Effective Work ($W$) |
+
+---
+
+## 2. The Efficiency Equation (EROI Hypothesis)
+
+The core proposition of Love-OS is that "Ego" acts as a dissipative structure that reduces the Energy Return on Investment (EROI) of a biological or cognitive system.
+
+The system efficiency $\eta$ is defined as:
+
+$$
+\eta = \frac{W_{out}}{E_{in}} = 1 - \frac{E_{loss}(R)}{E_{in}}
+$$
+
+Where $E_{loss}(R)$ represents the energy lost to "Internal Friction" (psychological defense mechanisms, cognitive dissonance, anxiety processing).
+
+### Case A: The "Ego-Driven" System ($R \gg 0$)
+* **State:** High Internal Entropy.
+* **Process:** The system allocates 80% of computational resources to self-validation and fear simulation.
+* **Result:** $\eta \approx 0.2$. The system is biologically and thermodynamically inefficient.
+
+### Case B: The "Love-OS" System ($R \to 0$)
+* **State:** Low Internal Entropy (Flow State / Superconductivity).
+* **Process:** Zero resistance allows input energy ($V$) to convert directly into action ($I$).
+* **Result:** $\eta \to 1.0$.
+* **Note:** In this state, the observer and the observation merge, eliminating the "processing lag" caused by the ego-filter.
+
+---
+
+## 3. Theoretical Implication
+
+> **Proposition:**
+> "Ego is not a moral defect, but a **thermodynamic inefficiency** caused by high information entropy."
+
+Love-OS aims to debug this inefficiency by creating a runtime environment where $R$ is minimized, effectively turning the human consciousness into a room-temperature superconductor for information.
+
 अमृतम्
 ---
 *© 2026 love.os. All rights reserved.*
