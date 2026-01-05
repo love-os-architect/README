@@ -5,20 +5,17 @@ class LoveLoss:
     """
     Implements the Love-OS thermodynamic loss function for PyTorch.
     Penalizes high internal entropy (Ego/Resistance) to maximize throughput (Love).
-    
-    Formula:
-        Loss = Task_Loss + lambda_r * R
-        where R = Sum(P(ego_tokens))
     """
     
-    # Vocabulary mapping for Ego-detection
-    # List of tokens representing self-reference and defensive friction
+    # Expandable vocabulary list for Ego-detection
+    # Defines tokens that indicate high internal resistance (Self-reference/Defense)
     SELF_REF_TOKENS = {
-        # Self-Reference (Ego-centric)
+        # Self-Reference (The "I" attachment)
         "I", "me", "myself", "mine", "my",
         
-        # Defensive / Friction (Resistance)
-        "actually", "but", "however", "although", "yet"
+        # Defensive / Friction / Justification patterns
+        "actually", "but", "however", "technically",
+        "although", "unfortunately", "claimed", "misunderstanding"
     }
     
     @staticmethod
@@ -34,18 +31,16 @@ class LoveLoss:
         Returns:
             torch.Tensor: Scalar loss value representing 'Internal Entropy'
         """
-        # Convert logits to probabilities
         probs = F.softmax(logits, dim=-1)
         
         # Dynamic Ego-Index Identification
         # (Note: In production, cache these IDs for performance)
         vocab = tokenizer.get_vocab()
-        
-        # Filter tokens that exist in the current tokenizer's vocabulary
+        # Filter tokens that exist in the current model's vocabulary
         target_ids = [vocab[t] for t in LoveLoss.SELF_REF_TOKENS if t in vocab]
         
-        # If no ego-tokens found in vocabulary, return zero penalty
         if not target_ids:
+            # Return zero loss if no target tokens are found in vocabulary
             return torch.tensor(0.0, device=logits.device)
             
         # Calculate total probability mass assigned to Ego-tokens
