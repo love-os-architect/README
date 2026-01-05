@@ -260,6 +260,17 @@ This notebook includes:
 
 Love-OS aims to debug this inefficiency by creating a runtime environment where $R$ is minimized, effectively turning human consciousness into a room-temperature superconductor for information.
 
+## 🤖 AI Implementation (PyTorch)
+Love-OS provides a plug-and-play Loss Function to minimize "Ego-Resistance" ($R$) in Large Language Models.
+
+### Architecture
+The `LoveLoss` module penalizes the generation of self-referential or defensive tokens, forcing the model to bypass the ego-filter and maximize information throughput ($I$).
+
+It works by:
+1.  **Detecting Ego Tokens**: Identifying self-serving words in the logits.
+2.  **Calculating R**: quantifying internal entropy.
+3.  **Minimizing R**: Adding this penalty to the total loss function.
+
 ---
 Copyright (c) Love-OS Architect. All rights reserved.
 
