@@ -302,7 +302,10 @@ $$A(\omega) = \frac{E}{\sqrt{(\omega_0^2 - \omega^2)^2 + (d\omega)^2}}$$
 - **$\omega_0 \approx \omega$**: When frequencies align, attraction maximizes (Resonance).
 - **$d \to 0$**: Low friction (Trust) amplifies the resonance peak.
 
-
+## 🚀 Roadmap
+* [x] **Kernel v1.0:** Resistance Optimization ($L=E/R$) - *Released*
+* [ ] **Kernel v2.0:** Gravity Engine ($A=G m1m2/R^2$) - *Classified / In Development*
+   > Warning: This module handles multi-agent causality and karmic attraction.
 ---
 Copyright (c) Love-OS Architect. All rights reserved.
 
