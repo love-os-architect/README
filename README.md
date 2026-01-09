@@ -192,9 +192,31 @@ Love.os dominates in "Utility" and "Simplicity," bridging the gap between **Quan
 
 For detailed methodology and definitions, see [TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md).
 
+## 🔬 Scientific Verification: The Physics of "Letting Go"
+
+Love-OS is not merely a metaphor; it is an architecture grounded in **Statistical Thermodynamics**.
+We verified the core algorithm (v1.3) via **2D Ising Model simulations**, mapping "Love" to an external magnetic field ($H$) and "Stress" to temperature ($T$).
+
+### Simulation Results (v1.3)
+
+![Love-OS Verification Graph](./verification.png)
+*(Fig: Comparative analysis of Awakening Index $A$ under Self-Effort vs. Love Bias)*
+
+### Key Findings
+
+1.  **The Fragility of "Self-Effort" ($H=0$)**
+    * Without external connection (Blue Line), order collapses instantly when environmental stress exceeds a critical point ($T > T_c$). This mathematically proves why "trying harder" often fails in high-stress environments.
+
+2.  **The "Grace" Effect ($H > 0$)**
+    * By introducing a slight "Love Bias" (Orange Line), the system maintains high Awakening ($A$) even in chaotic, high-temperature states.
+    * **Physical Proof:** It is thermodynamically more efficient to **"Surrender" (align with $H$)** than to **"Control" (forcefully lower $T$)**.
+
+3.  **Tri-Layer Emergence**
+    * Analysis confirms that global order (Coarse) relies on the stability of local bindings (Fine). Universal love begins with local resonance.
+
+> **Conclusion:** Awakening is not a magical state but a physical state of **Maximum Information Binding** and **Minimum Resistance**.
 
 
-For detailed methodology and definitions, see [TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md).
 
 # Technical Specifications & Physics Mapping
 
