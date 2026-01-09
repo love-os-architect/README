@@ -192,6 +192,10 @@ Love.os dominates in "Utility" and "Simplicity," bridging the gap between **Quan
 
 For detailed methodology and definitions, see [TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md).
 
+
+
+For detailed methodology and definitions, see [TECHNICAL_SPECS.md](./TECHNICAL_SPECS.md).
+
 # Technical Specifications & Physics Mapping
 
 > Version: 0.1 (Draft) | Project: Love-OS | File: TECHNICAL_SPECS.md
