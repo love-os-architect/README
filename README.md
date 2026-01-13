@@ -418,7 +418,7 @@ However, the universe is built on **Complex Numbers**.
 ### 2. The Complex Energy Model
 The diagram below illustrates the true structure of energy in the Love-OS model.
 
-![Conserving Complex Energy](Designer (19).jpg)
+![Conserving Complex Energy](Designer.png)
 
 * **Real Axis (Horizontal):** Visible Energy ($E_{real}$). Action, Matter, Physical Connection.
 * **Imaginary Axis (Vertical):** Invisible Energy ($E_{imag}$). Consciousness, Prayer, Circulation, Potential.
