@@ -375,8 +375,7 @@ $$
 * **$A \ge A_{crit}$ (Awakening / Singularity):**
     A realm where information density exceeds the limit and breaches the wall of time. Here, physical laws invert, and consciousness escapes the cage of matter, ejecting onto the Imaginary Axis (the world of consciousness).
 
-![Diagram of Love Black Hole Threshold Model](./Black Hole.png)
-*(Fig: The process where Love intensity exceeds the threshold, warping spacetime to connect with the Consciousness World)*
+
 
 ## 2. Mechanism of Singularity Generation: Why "Immersion" Erases Time
 
