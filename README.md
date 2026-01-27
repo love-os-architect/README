@@ -27,6 +27,68 @@ This is not a project for control, nor is it for profit. We provide this framewo
 Our technology is a bridge. Our equations are prayers. Our goal is a world where every individual can manifest their true potential without friction.
 
 ---
+# 🗺️ Love-OS Ecosystem Map
+
+[![Architect](https://img.shields.io/badge/Architect-love--os--architect-blue)](https://github.com/love-os-architect)
+[![System Status](https://img.shields.io/badge/System-Operational-success)]()
+
+**Welcome to the central navigation hub.**
+This index maps the entire "Love-OS" project structure, linking all active modules, theories, and prototypes.
+
+---
+
+## 🏗️ Core Architecture (The OS)
+> The fundamental systems and production environments.
+
+* **[Love-OS](https://github.com/love-os-architect/Love-OS)** - The main project repository.
+* **[AI-Production](https://github.com/love-os-architect/AI-Production)** - Central foundry for code generation.
+* **[love-core](https://github.com/love-os-architect/love-core)** - Core shell scripts and system baselines.
+* **[love-os-kernel](https://github.com/love-os-architect/love-os-kernel)** - The processing kernel.
+
+## 💓 Physics & Engines (The Logic)
+> Active modules implementing the $Y = L/R$ equations.
+
+* **[Physics-of-Love-Economy](https://github.com/love-os-architect/Physics-of-Love-Economy)** - Economic models for value circulation.
+* **[Love-OS-The-Physics-of-Relationships](https://github.com/love-os-architect/Love-OS-The-Physics-of-Relationships)** - Relationship vector dynamics.
+* **[love-os-emotion-engine](https://github.com/love-os-architect/love-os-emotion-engine)** - Sentiment and emotional processing unit.
+* **[love-os-gravity](https://github.com/love-os-architect/love-os-gravity)** - Attraction algorithms *(Private)*.
+
+## 📜 Theory & Philosophy (The Source)
+> The immutable laws and theoretical foundations.
+
+* **[LOVE_OS_THEORY.md](https://github.com/love-os-architect/LOVE_OS_THEORY.md)** - The Grand Unified Theory.
+* **[MANIFESTO.md](https://github.com/love-os-architect/MANIFESTO.md)** - Declaration of intent.
+* **[docs-THEORY_OF_NEGENTROPY.md](https://github.com/love-os-architect/docs-THEORY_OF_NEGENTROPY.md)** - Thermodynamics of love.
+* **[docs-COSMOLOGY.md](https://github.com/love-os-architect/docs-COSMOLOGY.md)** - Cosmological perspective.
+* **[GENESIS_AND_EVOLUTION.md](https://github.com/love-os-architect/GENESIS_AND_EVOLUTION.md)** - Origin history.
+
+## 📝 Documentation & Specs (The Blueprints)
+> Technical specifications and roadmaps.
+
+* **[docs-WHITEPAPER.md](https://github.com/love-os-architect/docs-WHITEPAPER.md)** - Technical whitepaper.
+* **[ARCHITECTURE.md](https://github.com/love-os-architect/ARCHITECTURE.md)** - System architecture overview.
+* **[docs-DESIGN_DOC.md](https://github.com/love-os-architect/docs-DESIGN_DOC.md)** - Detailed design documents.
+* **[IMPLEMENTATION.md](https://github.com/love-os-architect/IMPLEMENTATION.md)** - Implementation guides.
+* **[docs-GLOSSARY.md](https://github.com/love-os-architect/docs-GLOSSARY.md)** - Terminology definitions.
+* **[ROADMAP.md](https://github.com/love-os-architect/ROADMAP.md)** - Future development path.
+* **[docs](https://github.com/love-os-architect/docs)** - General documentation storage.
+
+## 🧪 Labs & Prototypes (The Experiments)
+> Experimental builds and historical archives.
+
+* **[Love-OS-v0.6.md](https://github.com/love-os-architect/Love-OS-v0.6.md)** - Latest specification draft.
+* **[LoveOS-v04](https://github.com/love-os-architect/LoveOS-v04)** - Legacy stable version.
+* **[Love-OS-Prototype](https://github.com/love-os-architect/Love-OS-Prototype)** - Early functional prototypes.
+* **[rc-simulation_engine.py](https://github.com/love-os-architect/rc-simulation_engine.py)** - Resource circulation simulator.
+* **[notebooks](https://github.com/love-os-architect/notebooks)** - Jupyter notebooks for calculation.
+
+## 📂 Web & Assets
+* **[script.js](https://github.com/love-os-architect/script.js)** / **[styles.css](https://github.com/love-os-architect/styles.css)** - Frontend assets.
+* **[Genesis-Commit](https://github.com/love-os-architect/Genesis-Commit)** - The first spark.
+* **[LICENSE](https://github.com/love-os-architect/LICENSE)** - Usage rights.
+
+---
+> *Maintained by [love-os-architect](https://github.com/love-os-architect).*
 
 ## 📘 The Core Theory
 For the complete mathematical framework and physical definitions regarding "Imaginary Rotation" and "The Physics of Prayer," please refer to the Theory Document:
