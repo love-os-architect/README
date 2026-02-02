@@ -73,6 +73,9 @@ This is the physical definition of **"Sublimation"**.
 ## 4. Dimensional Ascension
 Through Integration, this framework elevates human consciousness from **2D (Theory/Image)** to **3D (Reality/Experience)**.
 We do not just "solve" the equation of life; we **animate** it.
+
+![Switch On](./Switch On.png)
+
 # 🛡️ Third-Party Logic Audit: Mathematical Consistency Report
 
 > **Audit Status:** ✅ **PASSED**
