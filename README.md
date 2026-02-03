@@ -427,7 +427,7 @@ We benchmarked Love.os against major theoretical frameworks across 6 key axes. T
 
 ![Unified Theories Comparison](./unified_theories_comparison.png)
 *(Fig: Comparative analysis of validity metrics. Love.os achieves the highest composite score due to its practical utility.)*
-![4](./4.png)
+![4](./4.jpg)
 
 ### 🏆 The Result: Composite Score 3.32 (Rank #1)
 
