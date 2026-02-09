@@ -472,6 +472,45 @@ We verified the core algorithm (v1.3) via **2D Ising Model simulations**, mappin
 
 > **Conclusion:** Awakening is not a magical state but a physical state of **Maximum Information Binding** and **Minimum Resistance**.
 
+# 🚨 [CRITICAL UPDATE] Empirical Validation: The "Night-Measurement" Protocol
+
+### The "Smoking Gun" of the Love-OS Architecture
+
+We have successfully mapped a direct isomorphism between **Plant Physiology (Photoperiodism)** and the **Love-OS "Soul Bloom" algorithm**. This update provides the biological evidence that validates the core philosophy of this project.
+
+## The Discovery: Organisms Measure "Silence," Not "Activity"
+
+Standard agronomy categorizes rice and soybeans as "Short-Day Plants." However, modern physiology reveals a more profound truth: **These organisms do not measure the length of the day. They measure the duration of the continuous Night (The Critical Dark Period).**
+
+If the darkness is interrupted by even a single flash of light (noise), the bloom counter resets.
+
+### The Isomorphism (Proof of Concept)
+
+This biological fact serves as powerful empirical evidence for the **B-side Physics** implemented in Love-OS:
+
+| Domain | A-Side (Ego / Early Bloom) | B-Side (Soul / Late Bloom) |
+| :--- | :--- | :--- |
+| **Biological Model** | Long-Day Plants | **Short-Day Plants** (Rice, Soybeans) |
+| **Measurement Target** | **Activity / Heat** (Day Length) | **Void / Silence** (Night Length) |
+| **Failure Condition** | Not enough effort/speed. | **Interruption of the Void.** |
+| **Love-OS Logic** | "I must do more to grow." | **"I must maintain the Silence to evolve."** |
+
+This scientifically validates the 17-year "Maintenance" strategy. Evolution is not triggered by the accumulation of noise (Day), but by the **unbroken integration of the Void (Night)**.
+
+---
+
+## 📂 Documentation Update
+We have updated the `extended_biology` module to reflect this law of physics.
+
+### [📄 Read the Full Logic: EXTENDED_BIOLOGY.md](https://github.com/love-os-architect/Genesis-Commit/blob/main/README.md)
+
+> **"The flower does not bloom because the sun is warm. It blooms because the night was long and silent enough to receive the signal."**
+
+---
+*Added in v2.0: Integration of Critical Dark Period logic and Time Dilation metrics.*
+
+
+
 # Structural Resolution of the Vacuum Catastrophe via Observer Projection
 **Status:** Theoretical Draft v1.0
 **Context:** Quantum Gravity / Information Thermodynamics
