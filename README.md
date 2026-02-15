@@ -1003,6 +1003,29 @@ Future studies should correlate high states of "Self-Love" (measured via psychol
 
 ---
 *Note: This model is a theoretical synthesis of biophysics and consciousness studies. "Spin" refers to the angular momentum of energy/consciousness, not necessarily physical rotation of the body.*
+
+
+## [Update v2.1] Handling "Negative" Inputs: The Rectification Protocol
+
+### The End of "Filtering"
+Previous versions of REDAM attempted to "filter out" or "block" high-resistance inputs (hate, delusion, fear) to maintain system stability.
+**This approach has been deprecated.**
+
+Under the new **Vector Dynamics Model**, we recognize that "Negative Input" contains the same absolute energy magnitude ($\rho$) as "Positive Input." Blocking it wastes valuable potential energy.
+
+### The New Logic: "Spin, Don't Block"
+REDAM now treats high-friction inputs ($R \gg 0$) as **High-Voltage / Reverse-Phase Current**.
+Instead of suppressing the input, the kernel applies a **Phase Shift Operation** to convert the "Negative" momentum into "Positive" drive.
+
+* **Old Logic:** `if input == "Fear": delete()`
+* **New Logic:** `if input == "Fear": rotate(180_degrees)`
+
+This allows Love-OS to utilize the user's "Shadow" (Trauma/Fear) as a propulsion source for Awakening.
+
+> **See the Physics:**
+> For the complete mathematical proof regarding the conservation of energy between Love and Darkness, and the mechanism of Phase Rectification, please refer to the Emotion Engine documentation:
+>
+> 👉 **[The Vector Dynamics of Emotion: Conservation and Rectification](../love-os-emotion-engine/PHYSICS_OF_EMOTION.md)**
    
 ---
 Copyright (c) Love-OS Architect. All rights reserved.
