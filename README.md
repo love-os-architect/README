@@ -920,7 +920,7 @@ The energy is always here. It just changes its angle.
 **Status:** Theoretical Core / Proposal for Novel Integration
 
 ---
-
+![1](./1.png)
 ## 1. Abstract
 This document proposes a unified physical-metaphorical framework for "Awakening" and "Anti-Aging" within the Love-OS architecture.
 We hypothesize that **Consciousness is a vector quantity determined by rotational velocity (Spin).**
