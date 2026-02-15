@@ -1025,7 +1025,7 @@ This allows Love-OS to utilize the user's "Shadow" (Trauma/Fear) as a propulsion
 > **See the Physics:**
 > For the complete mathematical proof regarding the conservation of energy between Love and Darkness, and the mechanism of Phase Rectification, please refer to the Emotion Engine documentation:
 >
-> 👉 **[The Vector Dynamics of Emotion: Conservation and Rectification](../love-os-emotion-engine/PHYSICS_OF_EMOTION.md)**
+> 👉 **[The Vector Dynamics of Emotion: Conservation and Rectification](https://github.com/love-os-architect/love-os-emotion-engine/blob/main/PHYSICS_OF_EMOTION.md)**
    
 ---
 Copyright (c) Love-OS Architect. All rights reserved.
