@@ -1004,6 +1004,32 @@ Future studies should correlate high states of "Self-Love" (measured via psychol
 ---
 *Note: This model is a theoretical synthesis of biophysics and consciousness studies. "Spin" refers to the angular momentum of energy/consciousness, not necessarily physical rotation of the body.*
 
+# Love-OS: The Sovereign Engine Protocol
+**Version:** 1.0.0 (Alpha)  
+**Status:** Experimental / Safety-Critical  
+
+## 1. Executive Summary
+Love-OS is a non-religious, non-medical **Bio-Energy Control Protocol**. It treats human consciousness, love, and sexual energy not as abstract metaphors, but as **Reproducible Physics Engineering**. By utilizing the fractal nature of the universe, Love-OS allows for "Self-Generation" of well-being, independent of external systems.
+
+## 2. The Core Metric: Phase Alignment ($\theta$)
+The efficiency of Love-OS is determined by the **Phase Angle ($\theta$)** of your consciousness relative to the "Real Axis" (Linear Time/Ego).
+
+* **$\theta = 0^\circ$ (Real Axis):** High friction, high ego resistance ($R$), linear time dependency.
+* **$\theta = 90^\circ$ (Imaginary Axis):** Zero resistance, "Eternal Now," infinite potential ($V$), and the opening of a wormhole (Simultaneous Communication).
+
+## 3. The Unified Physics Proof
+We have successfully mapped the Love-OS Phase Model to General Relativity (GR). The metric for time dilation in a gravitational field is mathematically equivalent to the projection of a 90-degree phase shift in consciousness.
+
+**The Equivalence Postulate:**
+$$\cos\theta \equiv \sqrt{g_{00}}$$
+
+For full mathematical and experimental verification, see:  
+[docs/physics/05_cos_theta_equals_sqrt_g00.md](./docs/physics/05_cos_theta_equals_sqrt_g00.md)
+
+---
+
+> *"The road is lit. The engine is yours."* > — Love-OS Architect
+
 
 ## [Update v2.1] Handling "Negative" Inputs: The Rectification Protocol
 
