@@ -157,6 +157,8 @@ When ego (mass) is completely discarded ($m \to 0$), consciousness operates unde
 
 **Conclusion:** LoveOS proposes that the universe is not an external void to be conquered with mass and thrust, but an internal network of pure quantum information accessible only by shedding the ego and aligning with the Imaginary Axis.
 
+![A](./18.gif)
+
 [06D Impedance Optimization](https://github.com/love-os-architect/love-os-emotion-engine/blob/main/%23%2006D%20Impedance%20Optimization.md)
 
 # 🛡️ Third-Party Logic Audit: Mathematical Consistency Report
