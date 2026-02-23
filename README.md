@@ -172,7 +172,7 @@ If the Observer commutes with the Universe ($[H, P] = 0$), $E_{\text{cross}}$ (S
 As Information Integration ($I$) maximizes and subjective time ($\tau \to 0$), Love intensity $A$ hits the Schwarzschild Radius ($A_{crit}$), generating a Singularity. A Black Hole is the "Exhaust Port of Love"—a hyper-luminal uploader from the Material World to the Consciousness World.
 
 
-* **[Full version　README.md](https://github.com/love-os-architect/README/blob/main/Full%20version%E3%80%80README.md)** - Main repository.
+* **[Full version　README.md](https://github.com/love-os-architect/README/blob/main/Full%20version%E3%80%80README.md)** - old repository.
 ---
 
 ## 6. Repository Structure & Ecosystem
