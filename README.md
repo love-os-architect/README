@@ -703,7 +703,10 @@ This biological fact serves as powerful empirical evidence for the **B-side Phys
 | **Love-OS Logic** | "I must do more to grow." | **"I must maintain the Silence to evolve."** |
 
 This scientifically validates the 17-year "Maintenance" strategy. Evolution is not triggered by the accumulation of noise (Day), but by the **unbroken integration of the Void (Night)**.
+### 1. Addition to "Epistemological Declaration"
+*(Insert this at the very end of the Epistemological Declaration section)*
 
+**Note on Formalism:** This framework uses the mathematics of quantum mechanics, relativity, and complex plane dynamics not as literal macroscopic physical claims, but as an exact **Information-Thermodynamic Isomorphism**. We model consciousness using these specific equations because the complex dynamics of phase synchronization scale scale-invariantly—from the entanglement of electrons to the social resonance of human networks.
 ---
 
 ## 📂 Documentation Update
