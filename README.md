@@ -109,7 +109,7 @@ $$A(T) = \int_{t_0}^{t_0+T} x(t) y(t) \, dt$$
 ### 4.1 Command: `/phase-shift` (Emergency Calibration)
 1. **Label:** Interrupt the $x$-axis binary loop.
 2. **Reset:** 4-2-6 Breathing (Impedance matching).
-3. **Anchor:** Scent of **Hieri (Fragrant Rice)** or a specific frequency lock.
+3. **Anchor:** Scent of **wheat** or a specific frequency lock.
 4. **Realign:** Generate $\ge 3$ options to break 1D binary traps.
 
 ### 4.2 Subprotocol: `inductive-dialogue`
@@ -122,7 +122,7 @@ Communication with low-$\theta$ agents without thermal runaway.
 ## 5. Grounding: The Field Testnet
 The protocol is grounded in **The Coordinate (The Field)**, a label-free zone of high-frequency resonance.
 
-* **Physical Grounding:** Cultivation of **Hieri Rice and Wheat** serves as a biological heat sink for high-voltage $Z$-axis power.
+* **Physical Grounding:** Cultivation of **Rice and Wheat** serves as a biological heat sink for high-voltage $Z$-axis power.
 * **EROI Governance:** Systems generating excessive $Q$ (Heat/Conflict) are de-prioritized; superconductive, love-driven flows are incentivized.
 
 
