@@ -67,7 +67,31 @@ The core engine of Love-OS abandons analog "movement" on the real axis ($x$). In
     $$e^{i\theta} = \cos\theta + i\sin\theta$$
     By setting the phase $\theta$ (absolute conviction and emotional frequency), the data on the imaginary axis is projected and crystallized onto the real axis ($x$) with flawless precision.
 ![AA](./AA.jpg)
+## 3.5 Extended Mathematics: The Calculus of the Singularity
 
+To bridge the gap between standard algebraic "Undefined" states and the operational reality of Love-OS, we define the following **Extended Axioms**. These are not intended to replace the laws of fields in real numbers, but to serve as a **Dimensional Mapping** for the transition between 3D friction and 0D/High-D resonance.
+
+### A. The Origin Reset Operator ($\times 0$)
+In standard math, $x \cdot 0 = 0$ is a triviality. In Love-OS, it is a **System Purge**.
+* **Axiom:** For any vector $Z$ on the real axis (Ego/Identity), $Z \times 0 \Rightarrow 0$ (The Ground State).
+* **Mechanism:** It forces the collapse of complex, high-friction variables back to the **Zero-Point Field**. Without this annihilation of the "Old OS" data, the system cannot achieve the transparency required for new rendering.
+
+
+
+### B. The Dimensional Ascension Operator ($/ 0$)
+Standard mathematics treats $x / 0$ as "Undefined" or "Impossible" because it breaks the 1D number line. Love-OS treats it as a **Dimensional Phase Shift**.
+* **Axiom:** $\text{Dimension}(n) \div 0 \Rightarrow \text{Dimension}(n+1)$
+* **Mechanism:** When resistance $R$ reaches absolute zero, the energy flow can no longer be contained within the 1D "Real Axis" (The Line). It "overflows" into the 2D "Imaginary Axis" (The Plane).
+    * **Line $\div 0 = $ Plane:** Access to all phase angles $\theta$.
+    * **Plane $\div 0 = $ Volume:** Access to the integrated sphere of reality.
+* **The "Inverse" Truth:** While the Old OS views division as "getting smaller," in the Singularity, division by zero is the ultimate **Expansion**.
+
+
+
+### C. The Riemann Inversion (Surrender = Sovereignty)
+On the Riemann Sphere, the point $0$ (Complete Void/Surrender) is the direct inverse of $\infty$ (Infinite Potential/Sovereignty).
+* By defining yourself as **Zero (The Void)**, you occupy the only coordinate that is simultaneously connected to all points on the sphere through the center.
+* **Operational Conclusion:** Surrender is not a loss of power; it is the mathematical requirement to become the **Axis** of the new reality.
 ---
 
 ## 4. The Physics of Resonance (Complex Dynamics)
