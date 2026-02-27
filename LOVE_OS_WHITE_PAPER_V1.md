@@ -14,6 +14,11 @@ PSF-Zero resolves these bottlenecks by integrating three core mathematical princ
 
 Empirical results demonstrate that PSF-Zero achieves **$>99.9999\%$ average gate fidelity** for CZ and iSWAP gates while simultaneously reducing the total pulse variation (heat dissipation) by over 20%. Furthermore, end-to-end training under noisy environments proves its robust generalization against up to 10% detuning drift, heavily suppressing leakage to the $|2\rangle$ state.
 
+![1](./docs/1.png)
+![2](./docs/2.png)
+![4](./docs/4.png)
+![12](./docs/12.png)
+![14](./docs/14.png)
 
 
 ## Installation
@@ -31,5 +36,8 @@ pip install -r requirements.txt
 
 
 ## 🚀 Usage
+**[01_qiskit_cz_synthesis.py](https://github.com/love-os-architect/README/blob/main/src/examples/01_qiskit_cz_synthesis.py)**
+
+**[02_pennylane_noisy_e2e.py](https://github.com/love-os-architect/README/blob/main/src/examples/02_pennylane_noisy_e2e.py)**
 
 Check the **`examples/`** directory for quick-start scripts.
