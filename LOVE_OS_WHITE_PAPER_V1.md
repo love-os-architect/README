@@ -22,6 +22,8 @@ pip install -r requirements.txt
 ```
 
 ## 📂 Repository Structure
+* **[psf_zero_qiskit.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero_qiskit.py)**
+* **[psf_zero_pennylane.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero_pennylane.py)**
 
 * **`psf_zero_qiskit.py`**: A **Qiskit Transpiler Pass** (`PSFGateSynthesis`) that automatically decomposes arbitrary 2-qubit unitaries into highly optimized, low-dissipation native pulse sequences (e.g., **RZZ + RX/RY/RZ**).
 * **`psf_zero_pennylane.py`**: A **PennyLane Custom Optimizer** (`PSFHybridOptimizer`) that wraps standard Gradient Descent to inject **EIT** and **Projective Regularization** directly into the backward pass—perfect for noisy End-to-End Quantum Machine Learning (QML) or VQE.
