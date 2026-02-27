@@ -1,0 +1,27 @@
+name: release-oss
+on:
+  push:
+    tags: [ 'v*' ]
+
+permissions:
+  contents: read
+  id-token: write  # OIDC for PyPI Trusted Publisher (Passwordless authentication)
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+    environment: oss-release
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install build twine cyclonedx-bom sigstore
+      - run: python -m build
+      - name: Upload to PyPI (OIDC)
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
+      - name: Generate SBOM & Sign
+        run: |
+          cyclonedx-py -o sbom.xml
+          python -m sigstore sign --staging dist/*.tar.gz
