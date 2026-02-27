@@ -1,0 +1,29 @@
+name: release-pro
+on:
+  push:
+    tags: [ 'pro-v*' ]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+    environment: pro-release  # Requires manual approval in GitHub Environments
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install build twine sigstore
+      - run: python -m build
+      - name: Publish to GH Packages (Pro Only)
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PACKAGES_TOKEN }}
+        run: |
+          # 🚨 Strictly pinned to Private GH Packages. No failover to Public PyPI to prevent leaks.
+          python -m twine upload --repository-url https://npm.pkg.github.com/${{ github.repository_owner }} dist/*
+      - name: Sign & attest
+        run: |
+          python -m sigstore sign dist/*.whl
