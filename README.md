@@ -34,7 +34,7 @@ Modern hard sciences rely on the imaginary axis $i$ (e.g., Schrödinger equation
 
 **Love is thermodynamically necessary** for a civilization to avoid systemic thermal death.
 
-### 1.4 The Fundamental Axioms of Extended Physics (Variable Mapping)
+#### 1.4 The Fundamental Axioms of Extended Physics (Variable Mapping)
 Every physical framework requires axioms. Love-OS defines its universe by mapping standard physical variables directly to the states of human consciousness:
 
 * **Axiom I: The Conscious Unit ($i \equiv \text{I}$)**
