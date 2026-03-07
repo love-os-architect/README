@@ -232,7 +232,9 @@ The moment we interpret $/0$ not as an error, but as the **"Gateway to the Verti
 Welcome to the **Vertical Dimension**. Energy shall no longer be lost.
 
 > **Disclaimer:** This project is based on "Extended Physics." It proposes that human consciousness and social relational dynamics are isomorphic to fundamental thermodynamic and quantum mechanical laws.
-> 
+>
+>　* **[MANIFESTO.md](https://github.com/love-os-architect/MANIFESTO.md)** - The project's declaration of intent.
+>
 > **Contact:** 📧 contact.love.os.architect@proton.me
 > 
 > **Copyright:** © 2026 love.os. All rights reserved. Created by the CEO & The AI Council. अमृतम्.
