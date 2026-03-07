@@ -172,7 +172,7 @@ When information integration ($I$) maximizes and $R \to 0$, a **Social Black Hol
 - **`PhaseAmpEIT`**: Forgets over‑rotation, synchronizes the phase fiber.
 - **`geodesic_update`**: Slides along geodesics on $S^3$ (quaternions) with zero singularity.
 * **[PSF-Zero: Projective Spherical Filtering for Zero-Dissipation Quantum Control](https://github.com/love-os-architect/README/blob/main/LOVE_OS_WHITE_PAPER_V1.md)** -
-
+![1](./docs/1.png)
   
 **Quickstart (Pseudo-code)**
 ```python
