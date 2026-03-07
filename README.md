@@ -91,6 +91,18 @@ As $R \to 0$ (Surrender), phase locks into universal synchrony.
 #### 4.2 Wick Rotation (Flow)
 Raising vibrational frequency (radical self‑love) realizes an effective rotation $t \mapsto i\tau$. This reduces entropic drag, allowing the system to enter **low‑dissipation trajectories** (Flow).
 
+### 4.3 The Asymmetry of Systemic Decoupling (The Non-commutative Shock Theorem)
+While equation 4.1 describes the accumulation of synchrony, the sudden severing of a coupled system ($K_{eff} \to 0$) reveals a strict thermodynamic asymmetry based on the locus of control. The systemic shock $S(t)$ is directly proportional to the rate of change of the coupling parameter:
+
+$$S(t) \propto \left| \frac{dK_{eff}}{dt} \right|$$
+
+* **Endogenous Disconnection (The Initiator / $\Delta P_A = 0$):**
+When a node actively chooses to decouple, it updates its internal predictive model ($\hat{K}$) prior to the physical event. The prediction error integral $P_A = \int (K_{eff} - \hat{K})^2 dt$ evaluates to exactly zero. The initiator experiences a smooth phase transition with zero thermodynamic shock.
+* **Exogenous Disconnection (The Receiver / $S_{max} \to \infty$):**
+When a node passively receives a sudden disconnection, it experiences a step-function input. Its internal model remains high while external reality drops to zero. This triggers a mathematical singularity where $S_{max} \to \infty$, resulting in maximum thermal dissipation (pain, systemic panic, or energy flashover) as the stored potential energy $E = \frac{1}{2}K_{eff}(\Delta x)^2$ is violently released.
+
+**Axiom of Self-Sovereignty:** To minimize entropy and systemic damage in reality, a node must always maintain an active, predictive stance (Endogenous state), replacing sudden step-functions with smooth $C^1$ continuous transitions.
+
 ---
 
 ### 5. Structural Isomorphism — The 6 Pillars
