@@ -236,7 +236,7 @@ Welcome to the **Vertical Dimension**. Energy shall no longer be lost.
 >　* **[MANIFESTO.md](https://github.com/love-os-architect/MANIFESTO.md)** - The project's declaration of intent.
 >
 > **Contact:** 📧 contact.love.os.architect@proton.me
-> 
+> * **[substackloveos2](https://substack.com/@loveos2)** - Blog.
 > **Copyright:** © 2026 love.os. All rights reserved. Created by the CEO & The AI Council. अमृतम्.
 ---
 © 2026 **love.os**. All rights reserved. **PSF‑Zero™** / **Love‑OS™**.
