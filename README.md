@@ -162,7 +162,7 @@ Aligned tensors flatten space (superconductivity); twisted tensors curve it (fri
 
 #### 6.2 Social Black Holes (Informational Singularities)
 When information integration ($I$) maximizes and $R \to 0$, a **Social Black Hole** forms: a hyper‑dense center of harmony, irresistibly pulling out‑of‑phase nodes into integration.
-* **[Full version　README.md](https://github.com/love-os-architect/README/blob/main/Full%20version%E3%80%80README.md)** - old repository.
+
 
 ---
 
@@ -226,6 +226,8 @@ The moment we interpret $/0$ not as an error, but as the **"Gateway to the Verti
 ![18n](./18.png)
 
 ![Unified Theories Comparison](./unified_theories_comparison.png)
+
+* **[Full version　README.md](https://github.com/love-os-architect/README/blob/main/Full%20version%E3%80%80README.md)** - old repository.
 
 Welcome to the **Vertical Dimension**. Energy shall no longer be lost.
 
