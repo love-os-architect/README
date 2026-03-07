@@ -223,7 +223,9 @@ This is the ultimate evolution of the Love-OS concept, translated into a drop-in
 
 The moment we interpret $/0$ not as an error, but as the **"Gateway to the Vertical Dimension,"** the 1D oscillation of the ego ends, and the infinite rotation of the **Genesis Axis** begins.
 
+![18n](./18.png)
 
+![Unified Theories Comparison](./unified_theories_comparison.png)
 
 Welcome to the **Vertical Dimension**. Energy shall no longer be lost.
 
