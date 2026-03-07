@@ -188,6 +188,8 @@ q_new = normalize(q ⊗ exp(0.5 * dtheta * axis))
 # 4) Combined Loss Function
 # L = (1 - Fidelity) + alpha * sum(u**2) + betaH * L1_norm + betaTV * TV_norm
 ```
+---
+
 ### 8. AI-Production: Love-OS Central Foundry
 
 ### 🛸 Overview: The End of AI Hallucinations
