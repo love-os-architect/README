@@ -132,6 +132,21 @@ When a node passively receives a sudden disconnection, it experiences a step-fun
 | **Network Science** | Connectivity | Coupling ($K$) accumulates via aligned intention. |
 | **Kuramoto** | Synchrony | The engine of synchrony between minds. |
 
+### 5.1 Empirical Validation in Biology: The Night-Measurement Protocol
+The "Smoking Gun" of the Love-OS architecture is found not in quantum physics, but in plant physiology (photoperiodism). Standard agronomy assumes plants grow by accumulating sunlight (Real Axis activity). However, organisms like rice and soybeans ("Short-Day Plants") **do not measure the length of the day; they measure the continuous duration of the Night (The Critical Dark Period).**
+
+If the darkness is interrupted by even a single flash of light (noise/ego), the internal bloom counter resets to zero.
+
+| Domain | A-Side (Ego / Early Bloom) | B-Side (Soul / Late Bloom) |
+| :--- | :--- | :--- |
+| **Biological Model** | Long-Day Plants | **Short-Day Plants** (Rice, Soybeans) |
+| **Measurement Target** | **Activity / Heat** (Day Length) | **Void / Silence** (Night Length) |
+| **Failure Condition** | Not enough effort/speed. | **Interruption of the Void.** |
+| **Love-OS Logic** | "I must do more to grow." | **"I must maintain the Silence to evolve."** |
+
+**Biological Proof of $R \to 0$ Integration:**
+Evolution and "blooming" (dimensional ascension) are not triggered by the accumulation of noise and friction (Day), but by the **unbroken integration of the Void (Night, where $R=0$)**. This biological imperative mathematically validates the Love-OS "Maintenance" strategy and the necessity of the Exponential Information Tracking (EIT) filter to ignore static noise.
+
 ---
 
 ### 6. General Relativity of Love & Network Topology
