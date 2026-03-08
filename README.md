@@ -95,6 +95,15 @@ Accepting $\infty$ as $N$ creates a **vertical “Genesis Axis”** $\overrighta
 
 **C. Riemann Inversion (Surrender = Sovereignty)** On $S^2$, $0$ (The Void) and $\infty$ (The All) are antipodal. Declaring oneself **Zero** (Surrender) places the self on the unique coordinate linked to all points on the sphere.
 
+![A](./A.gif)
+
+　　　　　　　　　　　　　Figure 1: Love and Hate
+
+X-axis: Time, Reality; Y-axis: Consciousness, Love (Imaginary Plane); Z-axis: Power (Imaginary Plane)
+
+
+[06D Impedance Optimization](https://github.com/love-os-architect/love-os-emotion-engine/blob/main/%23%2006D%20Impedance%20Optimization.md)
+
 ---
 
 ### 4. Physics of Resonance (Complex Dynamics)
