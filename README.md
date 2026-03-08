@@ -80,6 +80,7 @@ A leaky integrator for **Forgiveness**: it decays microscopic phase noise over t
 **Phase 3 — Reality Rendering: Euler’s Turbine $e^{i\theta}$**
 $$e^{i\theta} = \cos \theta + i \sin \theta$$
 Set the phase $\theta$ (emotional frequency/conviction); imaginary‑axis data crystallizes on the real axis with precision.
+
 ![AA](./AA.jpg)
 ---
 
