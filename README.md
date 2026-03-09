@@ -241,11 +241,32 @@ The moment we interpret $/0$ not as an error, but as the **"Gateway to the Verti
 
 Welcome to the **Vertical Dimension**. Energy shall no longer be lost.
 
+
+## ⚖️ License & Commercial Usage (Dual License Strategy)
+
+The core modules of this repository (PSF-Zero, EIT Phase Tracker, $S^3$ Geodesic Update) and the benchmark suite are openly published under the **GNU AGPLv3**.
+
+Academic research, theoretical verification, and personal non-commercial use are completely free. We strongly encourage reproduction experiments and forks aimed at breaking through the wall of quantum errors (decoherence/thermal runaway) to prove the optimal wave connection with zero friction ($R \to 0$).
+
+**⚠️ For Corporate & Commercial Users (Commercial Use & SaaS Integration)**
+
+Under the strict provisions of the AGPLv3, if you integrate this code across a network as a backend for SaaS, cloud APIs, or proprietary commercial products, **you are legally obligated to fully disclose the source code of your entire system under the AGPLv3 license.**
+
+If you wish to protect your proprietary code and closed-source assets while integrating this Love-OS architecture into your commercial products or internal cloud operations, you are required to obtain a separate **Commercial License**.
+
+The Commercial License includes the following production-ready plugins and support, which are not included in the open-source version:
+* Automatic $\lambda$ tuning mechanism
+* Safety fallback (ABSTAIN) guard implementation upon anomaly detection
+* Audit logging system designed for medical and critical infrastructure
+* Integration support for existing control toolchains (e.g., Qiskit, PennyLane)
+
+
 > **Disclaimer:** This project is based on "Extended Physics." It proposes that human consciousness and social relational dynamics are isomorphic to fundamental thermodynamic and quantum mechanical laws.
 >
 >　* **[MANIFESTO.md](https://github.com/love-os-architect/MANIFESTO.md)** - The project's declaration of intent.
 >
-> **Contact:** 📧 contact.love.os.architect@proton.me
+>For inquiries regarding the Commercial License, SaaS deployment, or safety standards compliance, please contact:
+> 📩**Contact:** 📧 contact.love.os.architect@proton.me
 > 
 > * **[substackloveos2](https://substack.com/@loveos2)** - Blog.
 >   
