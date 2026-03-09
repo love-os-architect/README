@@ -214,7 +214,8 @@ Applies the regularized update $\delta\Theta = u(\Delta\Theta)$ using quaternion
 $$U_{upd} = \exp\left(-i\frac{\delta\Theta}{2} \hat{n}\cdot\vec{\sigma}\right)$$
 
 ## 3. One-Figure Proof: Pulse Control Recovery (A/B Test)
-![111](./figs/111.png)
+![111](./111.png)
+
 *(Run `benchmarks/pulse_rb_spike.py` to reproduce)*
 
 **Setup:** Identical pulses, identical random seeds. At $t = T/2$, a 10% detuning spike is injected.
