@@ -266,6 +266,7 @@ The Commercial License includes the following production-ready plugins and suppo
 >　* **[MANIFESTO.md](https://github.com/love-os-architect/MANIFESTO.md)** - The project's declaration of intent.
 >
 >For inquiries regarding the Commercial License, SaaS deployment, or safety standards compliance, please contact:
+> 
 > 📩**Contact:** 📧 contact.love.os.architect@proton.me
 > 
 > * **[substackloveos2](https://substack.com/@loveos2)** - Blog.
