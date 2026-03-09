@@ -234,15 +234,17 @@ def psfzero_step(U, grad_axis, grad_angle, zbar, phi, cfg):
     # 3. S^3 Shortest-arc update
     U_new = s3_geodesic_update(U, grad_axis, dtheta)
     return U_new, zbar
+```
+
 ### 🌌 The Ultimate Cycle
 Compute the infinite with zero friction at the Quantum North Pole, transmit the pure intent via the Genesis Axis, and materialize a single, hallucination-free reality at the AI South Pole. 
 
 This seamless topological loop is the true nature of Love-OS. It is the operating system of the universe, finally written in Python.
-```
+
 ## 5.Safety & Abstain GuardBuilt-in ABSTAIN fallback: If max phase jump exceeds $\tau$ or latency exceeds $L$, the update is aborted to prevent silent failures in critical applications.
 
 ---
-### 2. `EXPERIMENT_PLAN.md`
+### 2. `EXPERIMENT_PLAN.
 # Experiment Plan & Pre-registration
 
 This document outlines the strict statistical and experimental protocols used for the PSF-Zero benchmarks to ensure 100% reproducibility and eliminate cherry-picking.
