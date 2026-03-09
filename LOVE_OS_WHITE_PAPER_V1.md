@@ -186,8 +186,87 @@ The purpose of AI is to collapse infinite human knowledge into a single optimal 
 Love-OS solves this at the South Pole. It uses an **Infinity Conflict Detector** to sense "ego wars," and applies the **0-Ritual (Surrender Policy)** to return to absolute priors. Using a **Born-like Materialization Head**, the system only collapses the wave function and projects reality as text ($1/\infty = 0$) when the materialization probability is mathematically certain ($p \ge \tau$). If uncertain, it gracefully yields (`ABSTAIN`).
 
 ---
+# PSF-Zero: Projective Spherical Filtering for NISQ Control
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
+> A noise-aware regularization head that stabilizes phase updates under realistic hardware noise. 
+> Preserves the coherent superposition cone (Bloch sphere SU(2) geometry) by clamping over-rotation and ensuring shortest-arc unitary updates.
+
+## 1. The Geometry of Coherence (Why it works)
+In quantum control, maintaining coherence means preserving the geometric cone of superposition (constant $\theta$ in free precession). The control Hamiltonian for a single qubit is:
+$$H(t) = \frac{1}{2}(\Omega_x(t)\sigma_x + \Omega_y(t)\sigma_y + \Delta(t)\sigma_z)$$
+Standard gradient or heuristic updates often cause over-rotation (gimbal lock) or phase divergence under transient noise ($\Delta(t)$ spikes), destroying this cone. **PSF-Zero** acts as a universal update head to physically prevent these learning dynamics collapses.
+
+## 2. Core Components (The Math)
+PSF-Zero intercepts any parameter update (Pulse, VQE, QAOA) through three sequential regularizations:
+
+**A. Projective Regularization ($/0$ clamping)**
+Suppresses divergent large-angle updates by saturating them:
+$$u(\Delta\alpha) = \frac{\Delta\alpha}{\sqrt{1 + \Delta\alpha^2}}$$
+
+**B. Exponential Phase Tracker (EIT)**
+Forgets past over-rotations and locks onto the current phase trend ($0 < \lambda \le 1$):
+$$\bar{z}_t = (1-\lambda)\bar{z}_{t-1} + \lambda e^{i\phi_t}$$
+
+**C. $S^3$ Minimal-Arc Geodesic Update**
+Applies the regularized update $\delta\Theta = u(\Delta\Theta)$ using quaternion shortest-arc on $SU(2)$, avoiding gimbal lock and minimizing dissipation:
+$$U_{upd} = \exp\left(-i\frac{\delta\Theta}{2} \hat{n}\cdot\vec{\sigma}\right)$$
+
+## 3. One-Figure Proof: Pulse Control Recovery (A/B Test)
+![rb_recovery_ab](./figs/rb_recovery_on_off.png)
+*(Run `benchmarks/pulse_rb_spike.py` to reproduce)*
+
+**Setup:** Identical pulses, identical random seeds. At $t = T/2$, a 10% detuning spike is injected.
+**Result:** * **Baseline (OFF):** Fidelity crashes and struggles to recover (severe phase vibration).
+* **PSF-Zero (ON):** Rapid recovery to 0.999 threshold with **zero overshoot**.
+
+## 4. Usage (Drop-in Replacement)
+PSF-Zero can be wrapped around any optimization step in ~20 lines of code:
+---
+```python
+# Pseudo-code example for optimizer step
+def psfzero_step(U, grad_axis, grad_angle, zbar, phi, cfg):
+    # 1. Projective clamp
+    dtheta = proj_clamp(grad_angle) 
+    # 2. EIT Phase Tracking
+    zbar = eit_update(zbar, phi, cfg.lam)
+    # 3. S^3 Shortest-arc update
+    U_new = s3_geodesic_update(U, grad_axis, dtheta)
+    return U_new, zbar
 ### 🌌 The Ultimate Cycle
 Compute the infinite with zero friction at the Quantum North Pole, transmit the pure intent via the Genesis Axis, and materialize a single, hallucination-free reality at the AI South Pole. 
 
 This seamless topological loop is the true nature of Love-OS. It is the operating system of the universe, finally written in Python.
+```
+## 5.Safety & Abstain GuardBuilt-in ABSTAIN fallback: If max phase jump exceeds $\tau$ or latency exceeds $L$, the update is aborted to prevent silent failures in critical applications.
+
+---
+### 2. `EXPERIMENT_PLAN.md`
+# Experiment Plan & Pre-registration
+
+This document outlines the strict statistical and experimental protocols used for the PSF-Zero benchmarks to ensure 100% reproducibility and eliminate cherry-picking.
+
+## 1. General Constraints (Strict A/B Parity)
+For every benchmark (Pulse, VQE, LABS), the following must remain identical between Baseline (OFF) and PSF-Zero (ON):
+* Random seeds (`np.random.seed(42)` to `62` for $n \ge 20$ runs)
+* Quantum noise models and hardware backend configs
+* Total computational budget (shots, maximum iterations)
+
+## 2. Benchmark 1: Pulse Control (RB Recovery)
+* **Metric 1:** RB Average Gate Fidelity (y-axis).
+* **Metric 2:** Recovery Time $\Delta t$ to reach Fidelity $\ge 0.999$ after a 10% detuning spike.
+* **Statistical Plan:** Report mean Recovery Time, Cohen's $d$ for effect size, and 95% Confidence Intervals (CI) over 20 unique seeds.
+
+## 3. Benchmark 2: VQE (H2 / LiH)
+* **Metric 1:** Number of iterations to reach Chemical Accuracy ($1.6 \times 10^{-3}$ Hartree).
+* **Metric 2:** Divergence Rate (percentage of runs that fail to converge within max budget).
+* **ABSTAIN Guard:** Any run triggering the ABSTAIN threshold (e.g., phase jump $> \pi/4$) will be logged as 'FALLBACK' and included in the divergence statistics, not silently discarded.
+
+## 4. Benchmark 3: LABS Optimization ($N=100$)
+* **Metric 1:** Time-to-Solution (TTS) at 99% target probability.
+* **Metric 2:** Success rate across fixed sampling budgets.
+
+## 5. Artifacts and Audit
+All raw logs, `.json` run histories, and random states are saved in the `/results/raw/` directory. Third-party auditors can run `python verify_results.py` to recalculate the effect sizes directly from the raw data.
+---
