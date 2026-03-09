@@ -1,5 +1,6 @@
 # PSF-Zero: Projective Spherical Filtering for Zero-Dissipation Quantum Control
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Qiskit Compatible](https://img.shields.io/badge/Qiskit-Compatible-6929C4.svg)](https://qiskit.org/)
 [![PennyLane Ready](https://img.shields.io/badge/PennyLane-Ready-00D1B2.svg)](https://pennylane.ai/)
