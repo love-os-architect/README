@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 ```
 ### 📂 Repository Structure
-* **`psfzero_head.py`**: The core V02 lightweight mathematical implementation (Standalone regularization head).
+* **[psfzero_head.py](https://github.com/love-os-architect/README/blob/main/psfzero_head.py)** * : The core V02 lightweight mathematical implementation (Standalone regularization head).
 * **[psf_zero_qiskit.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero_qiskit.py)** : A Qiskit Transpiler Pass (`PSFGateSynthesis`) that automatically decomposes arbitrary 2-qubit unitaries into highly optimized, low-dissipation native pulse sequences.
 * **[psf_zero_pennylane.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero_pennylane.py)**: A PennyLane Custom Optimizer (`PSFHybridOptimizer`) that wraps standard Gradient Descent to inject EIT and Projective Regularization directly into the backward pass.
 
