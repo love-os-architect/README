@@ -84,12 +84,10 @@ class PSFHybridOptimizer(qml.GradientDescentOptimizer):
                     g_filtered[k] = g_filtered[k] + self.alpha_proj * pg[offset:offset+n].reshape(arg.shape)
                     offset += n; k += 1
 
-        # 3. Apply Update
-        new_args, _ = super().step_and_cost(lambda *a, **kw: objective_fn(*a, **kw), *args, **kwargs)
-        
+        # 3. Apply Update (Directly apply filtered gradients)
         stepsize = self.stepsize
         updated = []; k = 0
-        for arg in new_args:
+        for arg in args:
             if isinstance(arg, (list, tuple)):
                 arr = [a - stepsize * g_filtered[k] for a in arg]; k += len(arg)
                 updated.append(tuple(arr))
