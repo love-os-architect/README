@@ -62,15 +62,14 @@ pip install -r requirements.txt
 
 ```
 ### 📂 Repository Structure
-* **[psfzero_head.py](https://github.com/love-os-architect/README/blob/main/psfzero_head.py)** * : The core V02 lightweight mathematical implementation (Standalone regularization head).
-* **[psf_zero_qiskit.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero_qiskit.py)** : A Qiskit Transpiler Pass (`PSFGateSynthesis`) that automatically decomposes arbitrary 2-qubit unitaries into highly optimized, low-dissipation native pulse sequences.
-* **[psf_zero_pennylane.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero_pennylane.py)**: A PennyLane Custom Optimizer (`PSFHybridOptimizer`) that wraps standard Gradient Descent to inject EIT and Projective Regularization directly into the backward pass.
+* **[`psfzero_head.py`](https://github.com/love-os-architect/README/blob/main/psfzero_head.py)**: The core V02 lightweight mathematical implementation (Standalone regularization head).
+* **[`psf_zero_qiskit.py`](https://github.com/love-os-architect/README/blob/main/src/psf_zero_qiskit.py)**: A Qiskit Transpiler Pass (`PSFGateSynthesis`) that automatically decomposes arbitrary 2-qubit unitaries into highly optimized, low-dissipation native pulse sequences.
+* **[`psf_zero_pennylane.py`](https://github.com/love-os-architect/README/blob/main/src/psf_zero_pennylane.py)**: A PennyLane Custom Optimizer (`PSFHybridOptimizer`) that wraps standard Gradient Descent to inject EIT and Projective Regularization directly into the backward pass.
 
 ### ⚡ Quick Start
 Check the `examples/` directory for quick-start scripts:
-* **[01_qiskit_cz_synthesis.py](https://github.com/love-os-architect/README/blob/main/src/examples/01_qiskit_cz_synthesis.py)* **
-  
-* **[02_pennylane_noisy_e2e.py](https://github.com/love-os-architect/README/blob/main/src/examples/02_pennylane_noisy_e2e.py)* **
+* **[`01_qiskit_cz_synthesis.py`](https://github.com/love-os-architect/README/blob/main/src/examples/01_qiskit_cz_synthesis.py)**
+* **[`02_pennylane_noisy_e2e.py`](https://github.com/love-os-architect/README/blob/main/src/examples/02_pennylane_noisy_e2e.py)**
 ---
 
 ## 🛡️ Enterprise Safety & ABSTAIN Guard
