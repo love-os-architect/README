@@ -157,9 +157,9 @@ pip install qiskit qiskit-aer matplotlib numpy
 ### Run the Phase Map Simulation (Love-OS)
 Execute the main script to generate the 2D Heatmap of the Quantum Kuramoto order parameter $r$.
 
-```bash
-python src/examples/generate_phase_map.py
-```
+
+
+* **[python src/examples/generate_phase_map.py](https://github.com/love-os-architect/README/blob/main/src/examples/generate_phase_map.py)**
 ## 📊 Understanding the Love-OS Phase Map
 
 ![112](./112.png)
