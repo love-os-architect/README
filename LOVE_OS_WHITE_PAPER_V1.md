@@ -162,7 +162,7 @@ python src/examples/generate_phase_map.py
 ```
 ## 📊 Understanding the Love-OS Phase Map
 
-![Love-OS Survival Map](phase_map_r_vs_K_Tphi.png)
+![112](./112.png)
 
 
 
