@@ -128,3 +128,37 @@ To ensure 100% reproducibility and eliminate cherry-picking:
 2. **Pulse Control:** Metric is RB Average Gate Fidelity and Recovery Time $\Delta t$ after 10% detuning spike (Reporting Cohen's $d$ and 95% CI).
 3. **VQE (H2 / LiH):** Metric is iterations to Chemical Accuracy. ABSTAIN triggers are logged as 'FALLBACK', not discarded.
 4. **Audit:** All raw logs are saved in `/results/raw/` for third-party verification via `verify_results.py`.
+
+# Love-OS: Quantum Kuramoto Simulator 🌌
+
+[![Qiskit](https://img.shields.io/badge/Qiskit-2.x-blue.svg)](https://qiskit.org/)
+[![Quantum](https://img.shields.io/badge/Physics-Quantum_Consciousness-purple.svg)]()
+
+**Proving "Phase Synchronization of Consciousness" on Superconducting Qubits.**
+
+This repository provides a rigorous quantum mechanical framework to simulate social and emotional synchronization. By mapping the philosophy of **Love-OS** (where ego/resistance $R \to 0$ leads to a state of "social superconductivity") onto the **Quantum Kuramoto Model**, we demonstrate how individual conscious oscillators phase-lock under the presence of real-world quantum noise.
+
+## 🚀 The Paradigm Shift
+Classical Kuramoto models have long been used to describe biological and social synchronization. This project takes it to the quantum realm using IBM's superconducting qubits. 
+
+We model individual "egos" as the intrinsic frequencies ($\omega_i$) of qubits, and "love/empathy" as the XY-coupling strength ($K$). By injecting physical noise (T1/T2 thermal relaxation and phase damping), we can experimentally visualize the exact threshold where the attraction between nodes ($K$) overcomes environmental friction (decoherence), leading to a macroscopic quantum phase transition ($r \to 1$).
+
+## ✨ Key Features
+* **Trotterized Quantum Kuramoto Circuit:** Native implementation of the XY-Hamiltonian using `rxx` and `ryy` gates, optimized for superconducting hardware.
+* **Real-World Friction (Noise) Injection:** Utilizes Qiskit Aer's `density_matrix` to simulate T1/T2 relaxation and pure phase damping ($T_\phi$), mimicking the friction and misunderstandings of the real world.
+* **2D Phase Map Generation:** Automatically computes and visualizes the survival boundary of phase synchronization across varying coupling strengths and noise levels.
+
+## 🛠️ Quick Start
+
+### Prerequisites
+```bash
+pip install qiskit qiskit-aer matplotlib numpy
+```
+### Run the Phase Map Simulation (Love-OS)
+Execute the main script to generate the 2D Heatmap of the Quantum Kuramoto order parameter $r$.
+
+```bash
+python src/examples/generate_phase_map.py
+```
+
+
