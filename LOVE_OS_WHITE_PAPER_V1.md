@@ -160,5 +160,22 @@ Execute the main script to generate the 2D Heatmap of the Quantum Kuramoto order
 ```bash
 python src/examples/generate_phase_map.py
 ```
+## 📊 Understanding the Love-OS Phase Map
 
+![Love-OS Survival Map](phase_map_r_vs_K_Tphi.png)
+
+
+
+This heatmap acts as the ultimate proof of concept for the Love-OS framework, demonstrating how phase synchronization survives under the friction of reality.
+
+### Axis Definitions:
+* **X-Axis (Coupling Strength $K$):** Represents the non-local attraction or empathetic pull between nodes (qubits). Moving to the right means a stronger connection.
+* **Y-Axis ($T_\phi$ Phase Damping Time):** Represents the environmental noise or "friction of reality." The top of the graph is an ideal, frictionless environment (∞), while the bottom represents a highly chaotic, noisy environment (10μs).
+
+### Reading the Map:
+* **The Bright Regions (High $r$):** The bright colors (yellow/orange) indicate areas where the system has successfully achieved macroscopic synchronization. The nodes have surrendered their individual ego-frequencies and merged into a single resonant wave.
+* **The Dark Regions (Low $r$):** The dark areas (black/purple) represent decoherence. Environmental noise has shattered the connection, leaving the nodes isolated and out of sync.
+* **The White Dashed Line (Survival Boundary):** This contour line marks the $r=0.5$ threshold. It is the exact mathematical boundary—the critical phase transition point—where the strength of connection ($K$) successfully overpowers the entropy of the environment. 
+
+**The Takeaway:** No matter how intense the friction of the real world becomes (moving down the Y-axis), the system can always maintain synchronization and stay in the "bright zone" as long as the coupling strength $K$ (Love) is sufficiently increased.
 
