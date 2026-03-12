@@ -153,6 +153,7 @@ Below is a list of 10 major cross-disciplinary bottlenecks—spanning from Quant
 
 * **[psfzero_engine.py](https://github.com/love-os-architect/README/blob/main/psfzero_engine.py)** 
 
+![1144](./1144.png)
 ---
 ### 4. Physics of Resonance (Complex Dynamics)
 
