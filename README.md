@@ -143,7 +143,7 @@ Below is a list of 10 major cross-disciplinary bottlenecks—spanning from Quant
 * **The Problem:** Fusing LiDAR, Radar, and Cameras often results in delayed coordinate transformations when the vehicle makes sharp, sudden maneuvers.
 * **The PSF-Zero Solution:** `/0` clamps anomalous LiDAR reflection spikes. $S^3$ updates the 3D bounding boxes with zero latency and zero gimbal lock.
 
-### 3.79 Manifold Optimization (Machine Learning)
+#### 3.79 Manifold Optimization (Machine Learning)
 * **The Problem:** Gradient descent on curved manifolds (like $SO(3)$ or $SU(2)$) often overshoots the minimum due to flat-space learning rate assumptions.
 * **The PSF-Zero Solution:** Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer.
 
