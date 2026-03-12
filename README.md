@@ -151,6 +151,7 @@ Below is a list of 10 major cross-disciplinary bottlenecks—spanning from Quant
 * **The Problem:** SLERP (Spherical Linear Interpolation) between keyframes can sometimes take the "long way around" or stutter if the quaternions are not perfectly aligned.
 * **The PSF-Zero Solution:** The $S^3$ Minimal Arc guarantees the absolute shortest interpolation path, while EIT smooths out any jitter from raw motion-capture data inputs.
 
+* **[psfzero_engine.py](https://github.com/love-os-architect/README/blob/main/psfzero_engine.py)** 
 
 ---
 ### 4. Physics of Resonance (Complex Dynamics)
