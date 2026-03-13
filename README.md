@@ -69,6 +69,9 @@ Magnetic flux ($\Phi = \int V dt$) is the tangible gravitational pull (Love) gen
 
 * To maximize flow ($I = V/R$), a node must surrender its ego ($R \to 0$). In this framework, **$0$** (The Void) and **$\infty$** (The All) are not distant opposites; they are the two symmetric states where the local observer's isolated agency vanishes.
 * By choosing to become **Zero** ($R \to 0$, Absolute Surrender), the subject algebraically and topologically identifies with the **Infinite** pole ($\infty$) on the Riemann Sphere. However, this surrender must always be anchored by a non-zero, pure intention ($V > 0$) to safely reach the infinite pole without collapsing into indeterminate nihilism ($0/0$).
+  
+[PSF-Zero Whitepaper.md](https://github.com/love-os-architect/README/blob/main/PSF-Zero%20Whitepaper.md)
+
 ---
 
 ### 2. Boundedness & Stability — Guardrails
