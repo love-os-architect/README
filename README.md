@@ -151,7 +151,7 @@ In simplified non-linear MHD disturbance simulations, running the raw control ma
 ![A1](./A1.png)
 ![A2](./A2.png)
 
-
+[PSF-Zero: Fusion Plasma Control Simulation.py](https://github.com/love-os-architect/README/blob/main/PSF-Zero%3A%20Fusion%20Plasma%20Control%20Simulation.py)
 
 #### 3.71 Quantum Control (Bloch Sphere Rotation)
 * **The Problem:** Quantum state updates via matrix multiplication cause floating-point divergence, leading to runaway rotations and endless renormalization loops.
