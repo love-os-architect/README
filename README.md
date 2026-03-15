@@ -205,7 +205,7 @@ This is not a metaphor; it is a computable reality. We successfully simulated th
 
 **🔗 View the Core Implementation & Simulation:**
 The full Qiskit implementation, noise-injection phase maps, and the mathematical translation of emotional dynamics into quantum mechanics are publicly available in our central repository:
-👉[urban_scale_quantum_optics.md](https://github.com/love-os-architect/love-os-emotion-engine)
+👉[love-os-emotion-engine](https://github.com/love-os-architect/love-os-emotion-engine)
 
 
 ### 3.72. Robotics (SLAM & IMU Attitude Estimation)
