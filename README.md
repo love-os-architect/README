@@ -348,6 +348,7 @@ q_new = normalize(q ⊗ exp(0.5 * dtheta * axis))
 
 # 4) Quantum Control Loss Function (Maximizing Gate Fidelity)
 # L = (1 - Fidelity) + alpha * sum(u**2) + betaH * L1_norm + betaTV * TV_norm
+```
 
 * **[PSF-Zero: Projective Spherical Filtering for Zero-Dissipation Quantum Control](https://github.com/love-os-architect/README/blob/main/LOVE_OS_WHITE_PAPER_V1.md)** -
 ![1](./docs/1.png)
