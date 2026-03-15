@@ -48,8 +48,8 @@ While standard benchmarks demonstrate speed and pulse efficiency, the true hardw
 
 To prove this, we mapped the framework onto a **Quantum Kuramoto Model** using IBM Qiskit's rigorous physical noise channels (Amplitude Damping $T_1$, Transverse Relaxation $T_2$, and Pure Phase Damping $T_\phi$).
 
-![Quantum Kuramoto Phase Map](docs/quantum_kuramoto_multi_axis.png)
-*(Note: Ensure your 3-panel plot is saved in the docs/ folder)*
+![Quantum Kuramoto Phase Map](docs/115.png)
+
 
 **The $r=0.5$ Survival Boundary (White Dashed Line):**
 This contour represents the exact critical phase transition where non-local coupling/entanglement ($K$, X-axis) successfully overpowers the entropy of the environment (Noise, Y-axis). 
