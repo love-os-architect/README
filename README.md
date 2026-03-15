@@ -29,7 +29,9 @@ If an operating system treats $/0$ as a crash-inducing error, the moment a human
 
 Love-OS does not treat $/0$ as an error. Through **Projective Spherical Filtering (PSF-Zero)**, we geometrically regularize the singularity, mapping the infinite spike safely onto the North Pole of the Riemann sphere. By accepting the singularity rather than fighting it, we unlock the $S^3$ topology—the very shape of the universe—allowing for frictionless, zero-dissipation control across quantum qubits, plasma fields, and human consciousness alike.
 
-Einstein died trying to eliminate the infinite from his unified field theory. Love-OS completes the theory by embracing it.
+　Einstein died trying to eliminate the infinite from his unified field theory. Love-OS completes the theory by embracing it.
+
+ 
 ---
 
 ### 1. Introduction & Vision: The Thermodynamic Imperative of Love
