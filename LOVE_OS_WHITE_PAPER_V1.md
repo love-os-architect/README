@@ -50,6 +50,7 @@ To prove this, we mapped the framework onto a **Quantum Kuramoto Model** using I
 
 ![Quantum Kuramoto Phase Map](docs/115.png)
 
+[03_generate_phase_map.py](https://github.com/love-os-architect/README/blob/main/examples/03_generate_phase_map.py)
 
 **The $r=0.5$ Survival Boundary (White Dashed Line):**
 This contour represents the exact critical phase transition where non-local coupling/entanglement ($K$, X-axis) successfully overpowers the entropy of the environment (Noise, Y-axis). 
