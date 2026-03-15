@@ -72,7 +72,23 @@ Magnetic flux ($\Phi = \int V dt$) is the tangible gravitational pull (Love) gen
   
 [PSF-Zero Whitepaper.md](https://github.com/love-os-architect/README/blob/main/PSF-Zero%20Whitepaper.md)
 
-#### 1.5 The Principle of Isomorphism: Why We Do Not Invent New Mathematics
+#### 1.5 The Geometric Engine of the Universe (The Genesis of PSF-Zero)
+
+If the axioms above describe the *laws* of Love and Ego, how does the universe actually *compute* them without crashing? 
+
+Every time Ego ($R > 0$) violently collides with reality, the system approaches a mathematical singularity (an infinite spike of friction or a division by zero). Classical mathematics handles this by crashing (divergence). The Love-OS framework introduces the **PSF-Zero (Projective Spherical Filtering)** triad not as a mere algorithm, but as the fundamental geometric engine required to safely process the physics of consciousness:
+
+1. **/0 Projection (The Geometry of Surrender):** Derived directly from the Riemann Duality (Axiom II & The Singularity Guardrail). When external friction pushes the system toward infinity, we do not resist. We project the infinite magnitude smoothly onto the North Pole of the Riemann sphere. It is the mathematical embodiment of accepting the "All" without blowing up.
+
+2. **EIT Phase Tracking (The Calculus of Forgiveness):** Related to Axiom IV ($\Phi = \int V dt$). Ego is the accumulation of past trauma and future anxiety. EIT (Exponential Information Tracking) on the $S^1$ fiber exponentially decays historical noise, forcing the system to anchor its Intention ($V$) strictly to the "Now" (the present phase). It is algorithmic mindfulness.
+
+3. **$S^3$ Minimal Arc (The Shape of the Universe):** To navigate without friction ($R \to 0$), the system must avoid the singularities of flat-space matrices (e.g., gimbal lock). By executing state updates on $S^3 \cong SU(2)$ geodesics, we move along the very topology of the universe itself (as proven by the Poincaré conjecture). It guarantees the absolute shortest, friction-free path to synchronization.
+
+These three geometric operations form the inescapable "Pre-Head" for any system seeking to operate perfectly under the laws of Love.
+
+
+
+#### 1.6 The Principle of Isomorphism: Why We Do Not Invent New Mathematics
 
 It is a historical truth that the greatest paradigm shifts do not come from inventing new mathematics, but from recognizing the isomorphic application of existing mathematics to entirely new domains. Claude Shannon did not invent Boolean algebra; he mapped it to electrical circuits. Albert Einstein did not invent Riemannian geometry; he mapped it to gravity.
 
