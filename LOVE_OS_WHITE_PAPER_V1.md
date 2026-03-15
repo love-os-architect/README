@@ -42,6 +42,24 @@ When toggling PSF-Zero ON/OFF in standard VQE, QAOA, and Pulse (RB) pipelines, t
 * **Cost Factors Eradicated:** Drastic reduction in heavy renormalization calls and linear algebra (matrix multiplication) calls.
 * **Fidelity:** Prevents error divergence in noisy environments with **< 0.1% divergence rate**.
 
+### 🌌 Visual Proof: The Quantum Kuramoto Phase Map
+
+While standard benchmarks demonstrate speed and pulse efficiency, the true hardware-level impact of PSF-Zero is its ability to maintain macroscopic quantum synchronization under severe environmental decoherence. 
+
+To prove this, we mapped the framework onto a **Quantum Kuramoto Model** using IBM Qiskit's rigorous physical noise channels (Amplitude Damping $T_1$, Transverse Relaxation $T_2$, and Pure Phase Damping $T_\phi$).
+
+![Quantum Kuramoto Phase Map](docs/quantum_kuramoto_multi_axis.png)
+*(Note: Ensure your 3-panel plot is saved in the docs/ folder)*
+
+**The $r=0.5$ Survival Boundary (White Dashed Line):**
+This contour represents the exact critical phase transition where non-local coupling/entanglement ($K$, X-axis) successfully overpowers the entropy of the environment (Noise, Y-axis). 
+
+Without the topological regularization of PSF-Zero, NISQ algorithms quickly shatter and fall into the dark regions (decoherence and thermal death) when noise spikes. By routing parameter updates exclusively through the shortest $S^3$ geodesics and anchoring the phase via EIT, PSF-Zero effectively acts as a shock absorber. It pushes this survival boundary significantly deeper into the noisy regimes, allowing the quantum state to maintain strict Phase-Lock ($r > 0.5$) where classical optimizers would irrevocably diverge.
+
+**Reproduce this Phase Map locally:**
+```bash
+python examples/03_generate_phase_map.py
+
 ---
 
 ## 💻 Core Implementation (PSF-Zero V02)
