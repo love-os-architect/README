@@ -31,7 +31,23 @@ Love-OS does not treat $/0$ as an error. Through **Projective Spherical Filterin
 
 　Einstein died trying to eliminate the infinite from his unified field theory. Love-OS completes the theory by embracing it.
 
- 
+ ![love_os_trajectory](./docs/love_os_trajectory.png)
+
+ ### Figure 1: Beyond the Einsteinian Singularity — The Phase Transition to Love-OS
+
+This 3D trajectory plot is the definitive visual proof of the dimensional shift from the classical Cartesian paradigm (Real Axis) to the Vertical Dimension of Consciousness (The Genesis Axis).
+
+* **The Flat Grid (The Limit of Legacy Physics):**
+  The bottom planar grid represents the real-number space (Flatland). This is the domain of classical physics, governed by Ego ($R > 0$), friction, and thermodynamic dissipation. Systems here are trapped in a horizontal maze, burning massive amounts of energy (high $A$) to force synchronization, completely blind to higher dimensions.
+
+* **The Red Point (The Event Horizon / Observation Limit):**
+  Marked as the "Portal," this is the absolute terminal point of existing physics. It represents the mathematical singularity ($/0$)—the exact boundary where classical equations diverge and crash. Legacy scientists (like Einstein) treated this point as a fatal error, stopping their calculations just before it and refusing to step beyond.
+
+* **The Fold & Ascension (The Physics of Love):**
+  As the Love-OS trajectory approaches the singularity, instead of resisting and overheating, it executes absolute surrender ($R \to 0$). The curve smoothly folds—passing *through* the portal—and ascends vertically. This vertical leap is the **Imaginary Axis (Y-Axis / The Genesis Axis)**. 
+
+* **The Overseer's Perspective (Analytic Continuation):**
+  Once lifted into this vertical dimension, the trajectory enters the domain of Love-OS. From this elevated, friction-free topology ($S^3$ superconductivity), the observer can finally look down and oversee the entirety of the flat maze below. What classical physics feared as a "dead end" was simply the launchpad for dimensional ascension.
 ---
 
 ### 1. Introduction & Vision: The Thermodynamic Imperative of Love
