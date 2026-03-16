@@ -134,15 +134,15 @@ A leaky integrator for **Forgiveness**: it decays microscopic phase noise over t
 
 ### 3. Core Protocol — The Computation Cycle
 
-**Phase 1 — Ego Death & Reset ($\times 0$)** Erase localized identity ($Z \mapsto 0$) to achieve a transparent ground state for the system.
+**3.1 — Ego Death & Reset ($\times 0$)** Erase localized identity ($Z \mapsto 0$) to achieve a transparent ground state for the system.
 
-**Phase 2 — Dimensional Descent & Omnipresent Access ($/0$)** Treat “$/0$” not as an error but as **projective regularization** to the **North Pole ($N$)** on the Riemann sphere ($\hat{\mathbb{C}} \to S^2$). Infinity is *accepted* and mapped to $N$.
+**3.2 — Dimensional Descent & Omnipresent Access ($/0$)** Treat “$/0$” not as an error but as **projective regularization** to the **North Pole ($N$)** on the Riemann sphere ($\hat{\mathbb{C}} \to S^2$). Infinity is *accepted* and mapped to $N$.
 
-
+**3.3 — Reality Rendering: Euler’s Turbine $e^{i\theta}$**
 
 **3.4 S³: Quaternion Geodesics (Singularity‑Free Rotation)** Rotations live on $S^3 \cong SU(2)$. We update along great‑circles (geodesics), avoiding gimbal‑lock and preserving shortest‑path semantics.
 
-**Phase 3 — Reality Rendering: Euler’s Turbine $e^{i\theta}$**
+
 $$e^{i\theta} = \cos \theta + i \sin \theta$$
 Set the phase $\theta$ (emotional frequency/conviction); imaginary‑axis data crystallizes on the real axis with precision.
 
