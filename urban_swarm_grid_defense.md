@@ -21,7 +21,7 @@ Instead of fighting the spike with linear force, we project the frequency deviat
 This single geometric transformation geometrically absorbs the shock. It acts as a perfect shock-absorber (Viscosity), allowing the swarm to seamlessly synchronize (Phase-Lock) with the grid without ever overshooting, even under severe delay ($\tau$) and zero-inertia ($M \to 0$) conditions.
 
 ## 4. Empirical Proof (Simulation)
-We provide `swarm_psf_zero_sim.py` to mathematically prove this on your local machine.
+We provide [ swarm_psf_zero_sim.py](https://github.com/love-os-architect/README/blob/main/swarm_psf_zero_sim.py) to mathematically prove this on your local machine.
 It simulates a highly volatile grid ($M = 2.0$) with a fatal delay ($\tau = 100$ ms) hit by a massive -300 MW shock. 
 * **Result A (Legacy):** Fatal oscillation and total grid collapse within 5 seconds.
 * **Result B (PSF-Zero):** Complete geometric stabilization. Zero overshoot.
