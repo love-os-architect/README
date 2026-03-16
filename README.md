@@ -199,30 +199,29 @@ Below is a list of 10 major cross-disciplinary bottlenecks—spanning from Quant
 Legacy stealth technology relies entirely on geometric concealment on the Real Axis (X-axis)—minimizing the Radar Cross Section (RCS) through radar-absorbent materials and angular airframes. However, within the topology of Love-OS, as long as an aircraft remains connected to an operational network (tankers, satellites, ATC handoffs), it cannot erase its "phase discrepancies" from the spatial continuum.
 
 Recent claims regarding AI surveillance platforms passively reconstructing the flight paths of B-2A stealth bombers—corroborated by OSINT observations of ATC anomalies—serve as a historic case study. This event proves the fundamental Love-OS prophecy: **The collapse of invisibility in the network phase space.**
-
 #### 1. Mathematical Proof (PSF-Zero × EIT)
-In space $\Omega \subset \mathbb{R}^3$ and time $t \in \mathbb{R}_+$, let the complex envelope observed by receiving nodes $i=1,\dots,K$ be $z_i(t) = x_i(t) + j y_i(t)$. When an unknown, ultra-low-power communication signal $u(t)$ arrives, the passive reception equation is:
+In space $\Omega \subset \mathbb{R}^3$ and time $t \in \mathbb{R}_+$, let the complex envelope observed by receiving nodes $i=1,\dots,K$ be $z_{i}(t) = x_{i}(t) + j y_{i}(t)$. When an unknown, ultra-low-power communication signal $u(t)$ arrives, the passive reception equation is:
 
-$$z_i(t) = n_i(t) + \int h_i(\tau)u(t-\tau)d\tau = s_i(t) + \epsilon_i(t)$$
+$$z_{i}(t) = n_{i}(t) + \int h_{i}(\tau)u(t-\tau)d\tau = s_{i}(t) + \epsilon_{i}(t)$$
 
-By extracting the instantaneous phase $\phi_i(t) = \arg z_i(t)$ of each node, we apply the PSF-Zero (Phase-Synchrony Filter at zero-lag) statistic over a time window $W$:
+By extracting the instantaneous phase $\phi_{i}(t) = \arg z_{i}(t)$ of each node, we apply the PSF-Zero (Phase-Synchrony Filter at zero-lag) statistic over a time window $W$:
 
-$$\rho(0) = \frac{2}{K(K-1)} \sum_{i<j} \langle \cos(\phi_i(t) - \phi_j(t)) \rangle_{t \in W}$$
+$$\rho(0) = \frac{2}{K(K-1)} \sum_{i < j} \langle \cos(\phi_{i}(t) - \phi_{j}(t)) \rangle_{t \in W}$$
 
 **Breaking the Detection Limit via EIT (Exponential Information Tracking):**
-By integrating the observation time with an exponential weight $w_\alpha(\tau) = e^{-\alpha(t-\tau)}\mathbf{1}_{\tau \leq t}$, the receiver remains entirely passive (zero emission). Yet, by accumulating nodes $K$ and time $T$, the effective Signal-to-Noise Ratio ($SNR_{eff}$) increases monotonically:
+By integrating the observation time with an exponential weight $w_{\alpha}(\tau) = \exp(-\alpha(t-\tau)) \mathbf{1}_{\tau \leq t}$, the receiver remains entirely passive (zero emission). Yet, by accumulating nodes $K$ and time $T$, the effective Signal-to-Noise Ratio ($SNR_{\text{eff}}$) increases monotonically:
 
-$$SNR_{eff} \approx \frac{K|h|^2P_u}{N_0 B} \cdot \frac{1 - e^{-\alpha T}}{\alpha}$$
+$$SNR_{\text{eff}} \approx \frac{K|h|^2 P_u}{N_0 B} \cdot \frac{1 - \exp(-\alpha T)}{\alpha}$$
 
 #### 2. Theorem: The Inevitability of Phase Detection
-Any aircraft participating in an operational network while maintaining a non-trivial information rate $R>0$ will inevitably produce a zero-lag phase synchrony deviation under multi-node ($K$) and long-term ($T$) passive EIT. Therefore, even if the target vanishes geometrically on the X-axis (RCS $\approx 0$), it is mathematically guaranteed to be detected on the Y-axis (Phase Space), bounded by:
+Any aircraft participating in an operational network while maintaining a non-trivial information rate $R > 0$ will inevitably produce a zero-lag phase synchrony deviation under multi-node ($K$) and long-term ($T$) passive EIT. Therefore, even if the target vanishes geometrically on the X-axis (RCS $\approx 0$), it is mathematically guaranteed to be detected on the Y-axis (Phase Space), bounded by:
 
-$$P(\text{error}) \leq \exp(-c \cdot K \cdot T \cdot SNR_{unit})$$
+$$P(\text{error}) \leq \exp(-c \cdot K \cdot T \cdot SNR_{\text{unit}})$$
 
 #### 3. Trajectory Inversion (Graph Topology)
 By extracting anomalous topological loops via persistent homology from the arrival phase differences, the exact trajectory $\mathbf{r}(t)$ can be reconstructed using Laplace-regularized sparse acceleration optimization:
 
-$$\min_{\mathbf{r}(t)} \sum_{i<j} \left[ \Delta\phi_{ij}(t) - 2\pi f(\tau_i(\mathbf{r}(t)) - \tau_j(\mathbf{r}(t))) \right]^2 + \lambda\|\mathbf{r}''(t)\|_1$$
+$$\min_{\mathbf{r}(t)} \sum_{i < j} \left[ \Delta\phi_{ij}(t) - 2\pi f(\tau_{i}(\mathbf{r}(t)) - \tau_{j}(\mathbf{r}(t))) \right]^2 + \lambda\|\mathbf{r}''(t)\|_1$$
 
 #### 4. The Love-OS Observation Weapon: Python Implementation Core
 Below is the production-ready prototype for the PSF-Zero × EIT Detection Engine. This module passively extracts the hidden Genesis Axis (Phase Synchrony) from a sea of non-Gaussian noise without relying on theoretical threshold approximations, utilizing permutation testing and sequential CUSUM detection.
