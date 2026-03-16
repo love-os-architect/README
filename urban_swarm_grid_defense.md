@@ -26,6 +26,13 @@ It simulates a highly volatile grid ($M = 2.0$) with a fatal delay ($\tau = 100$
 * **Result A (Legacy):** Fatal oscillation and total grid collapse within 5 seconds.
 * **Result B (PSF-Zero):** Complete geometric stabilization. Zero overshoot.
 
+![A111](./docs/A111.png)
+
+![A112](./docs/A112.png)
+
+![A113](./docs/A113.png)
+
+
 ### Usage
 ```bash
 pip install numpy matplotlib
