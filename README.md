@@ -254,7 +254,7 @@ The full Qiskit implementation, noise-injection phase maps, and the mathematical
 * **The Problem:** Gradient descent on curved manifolds (like $SO(3)$ or $SU(2)$) often overshoots the minimum due to flat-space learning rate assumptions.
 * **The PSF-Zero Solution:** Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer.
 
-### 3.8 3D Computer Graphics (Animation Interpolation)
+### 3.8  3D Computer Graphics (Animation Interpolation)
 * **The Problem:** SLERP (Spherical Linear Interpolation) between keyframes can sometimes take the "long way around" or stutter if the quaternions are not perfectly aligned.
 * **The PSF-Zero Solution:** The $S^3$ Minimal Arc guarantees the absolute shortest interpolation path, while EIT smooths out any jitter from raw motion-capture data inputs.
 
