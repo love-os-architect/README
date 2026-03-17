@@ -2,6 +2,8 @@
 
 [PSFZeroEngine.py](https://github.com/love-os-architect/README/blob/main/PSFZeroEngine.py)
 
+[Phase-Scattering Control.py](https://github.com/love-os-architect/README/blob/main/Phase-Scattering%20Control.py)
+
 ## Executive Summary
 For decades, human technology has been trapped in the **X-Axis (Power/Signal)**. We built bigger radars, thicker stealth coatings, and stronger magnetic fields to suppress chaos. This era is over. 
 
