@@ -32,12 +32,10 @@ $$P(\text{error}) \leq \exp(-c \cdot K \cdot T \cdot SNR_{\text{unit}})$$
 
 ---
 
-## 3. Trajectory Inversion (Graph Topology)
-
+#### 3. Trajectory Inversion (Graph Topology)
 By extracting anomalous topological loops via persistent homology from the arrival phase differences, the exact trajectory $\mathbf{r}(t)$ can be reconstructed using Laplace-regularized sparse acceleration optimization:
 
-$$\min_{\mathbf{r}(t)} \sum_{i<j} [\Delta\phi_{ij}(t) - 2\pi f(\tau_i(\mathbf{r}(t)) - \tau_j(\mathbf{r}(t)))]^2 + \lambda \|\mathbf{r}''(t)\|_1$$
-
+$$\min_{\mathbf{r}(t)} \sum_{i<j} \left[ \Delta\phi_{ij}(t) - 2\pi f \left( \tau_i(\mathbf{r}(t)) - \tau_j(\mathbf{r}(t)) \right) \right]^2 + \lambda \left\lVert \mathbf{r}''(t) \right\rVert_1$$
 ---
 
 #### 4. The Love-OS Observation Weapon: Python Implementation Core
