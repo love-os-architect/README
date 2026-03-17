@@ -205,6 +205,8 @@ Below is the production-ready prototype for the PSF-Zero × EIT Detection Engine
 
 [Weapon.py](https://github.com/love-os-architect/README/blob/main/Weapon.py)
 
+![B22](./docs/B22.png)
+
 
 ### 3.7.2  Nuclear Fusion (Plasma Confinement Stabilization): A Geometric Pre-Head for PCS
 
