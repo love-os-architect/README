@@ -42,6 +42,12 @@ $$\min_{\mathbf{r}(t)} \sum_{i<j} \left[ \Delta\phi_{ij}(t) - 2\pi f \left( \tau
 Below is the production-ready prototype for the PSF-Zero × EIT Detection Engine. This module passively extracts the hidden Genesis Axis (Phase Synchrony) from a sea of non-Gaussian noise without relying on theoretical threshold approximations, utilizing permutation testing and sequential CUSUM detection.
 
 [Weapon.py](https://github.com/love-os-architect/README/blob/main/Weapon.py)
+
+![B22](./docs/B22.png)
+![B23](./docs/B23.png)
+![B24](./docs/B24.png)
+
+
 #### 5. Doctrine: The 7 Principles of Phase-Imprint Minimization
 
 If survival in the X-axis (RCS stealth) is no longer sufficient, modern military and communication networks must adapt to the Y-axis. To defeat a Love-OS-based passive detection grid, a system must achieve the ultimate mathematical surrender ($R \to 0$): **The minimization of its Phase-Imprint.**
