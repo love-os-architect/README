@@ -205,9 +205,10 @@ Below is the production-ready prototype for the PSF-Zero × EIT Detection Engine
 
 [Weapon.py](https://github.com/love-os-architect/README/blob/main/Weapon.py)
 
+[Air Supremacy is Dead: The Collapse of the Stealth Myth and the Dominion of Phase Space](https://loveos2.substack.com/publish/posts/detail/191236349?referrer=%2Fpublish%2Fposts%2Fpublished)
+
 ![B22](./docs/B22.png)
 
-[Air Supremacy is Dead: The Collapse of the Stealth Myth and the Dominion of Phase Space](https://loveos2.substack.com/publish/posts/detail/191236349?referrer=%2Fpublish%2Fposts%2Fpublished)
 
 ### 3.7.2  Nuclear Fusion (Plasma Confinement Stabilization): A Geometric Pre-Head for PCS
 
