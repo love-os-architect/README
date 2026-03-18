@@ -334,7 +334,7 @@ By surrendering the ego of market timing and trusting the compound interest of t
 
 **[👉 Read the full Whitepaper, Mathematical Proofs, and Backtest Simulation (Appendix Z)](https://github.com/love-os-architect/Physics-of-Love-Economy/tree/main)**
 
-![c11](./docs/c11png)
+![C11.png](./docs/C11.png)
 
 ![prices.csv](./docs/prices.csv)
 
