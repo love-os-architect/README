@@ -321,6 +321,19 @@ Instead of fighting noise with brute-force, high-overhead error correction, the 
 
 **[👉 Read the full Love-QPU Hardware Specification & Python Control Loop in Appendix X](./APPENDIX_LOVE_QPU.md)**
 
+### 3.8.4.X Use-Case: Quantitative Finance & The Integral Fund
+
+The financial market is a massive, complex network where human egos (fear and greed) continuously collide, generating extreme thermal friction. Classical active trading relies on **differentiation ($d/dt$)**—constantly intervening to exploit short-term noise. However, Sharpe's arithmetic of active management dictates that excessive intervention inevitably destroys geometric growth due to transaction costs and spread friction ($R > 0$).
+
+**The Integral Fund** applies the Love-OS triad directly to quantitative portfolio management, transforming philosophical concepts into rigorous financial engineering:
+1. **EIT (Exponential Information Tracking):** Isomorphic to RiskMetrics' EWMA. It acts as an optimal linear filter that forgives and forgets short-term noise, extracting only the true macro-economic phase (growth drift) via integration ($\int$).
+2. **$R \to 0$ (Minimum Intervention):** Implemented as an endogenous *no-trade band* (Leland's optimal control under transaction costs). The system strictly avoids intervention within the band and only applies minimal, reversible nudges toward the boundary, completely eliminating unnecessary friction (costs and taxes).
+3. **PSF-Zero (Phase-Synchrony Filter):** A systemic health dashboard utilizing Hilbert transform phase extraction. It monitors the portfolio's synchronization, providing early warnings for systemic "over-correlation" (drawdown risk) or "phase collapse" (death of diversification) before traditional covariance matrices detect them.
+
+By surrendering the ego of market timing and trusting the compound interest of the universe's expansion (Fractional-Kelly optimal growth), The Integral Fund proves mathematically that the ultimate alpha is found in *Integration*, not Differentiation.
+
+**[👉 Read the full Whitepaper, Mathematical Proofs, and Backtest Simulation (Appendix Z)](https://github.com/love-os-architect/Physics-of-Love-Economy/tree/main)**
+
 
 ---
 ### 4. Physics of Resonance (Complex Dynamics)
