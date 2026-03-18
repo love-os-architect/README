@@ -334,9 +334,9 @@ By surrendering the ego of market timing and trusting the compound interest of t
 
 **[👉 Read the full Whitepaper, Mathematical Proofs, and Backtest Simulation (Appendix Z)](https://github.com/love-os-architect/Physics-of-Love-Economy/tree/main)**
 
-![C11](./docs/c11png)
+![c11](./docs/c11png)
 
-![prices (1).csv](./docs/prices (1).csv)
+![prices.csv](./docs/prices.csv)
 
 ---
 ### 4. Physics of Resonance (Complex Dynamics)
