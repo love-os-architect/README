@@ -62,11 +62,11 @@ private:
     auto out = std::make_shared<PointCloud2>(*msg);
     rclcpp::Time orig_stamp = msg->header.stamp;
     
-    // ヘッダ時刻の改竄
+    // 
     rclcpp::Time new_stamp = rclcpp::Time((orig_stamp.nanoseconds() + static_cast<int64_t>(total_ms * 1e6)), RCL_ROS_TIME);
     out->header.stamp = new_stamp;
 
-    // TODO: ここに各点の相対時間(point step offset)をガウスジッタで微小改竄するフックを入れるとさらに過酷になる
+    // TODO
 
     if (prm_.stamp_only) {
       pub_->publish(*out);
@@ -93,7 +93,7 @@ private:
       }
     }
 
-    // 並べ替えカオス
+    // 
     if (buf_.size() >= 2) {
       double span_ms = (buf_.back().due - buf_.front().due).seconds() * 1000.0;
       if (span_ms > 0.0 && span_ms <= prm_.reorder_window_ms && rng_->bernoulli(0.3)) {
