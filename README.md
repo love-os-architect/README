@@ -336,8 +336,9 @@ While classical SLAM violently crashes under these conditions, the PSF-Zero pipe
 * 📊 **[The Geometric Proof (Python Visualizer)](./scripts/plot_phase_tester.py)**: Generate the $R \to 0$ phase-transition trajectory from your own local data.
 
 ### 3.8.1 Manifold Optimization (Machine Learning)
-* **The Problem:** Gradient descent on curved manifolds (like $SO(3)$ or $SU(2)$) often overshoots the minimum due to flat-space learning rate assumptions.
-* **The PSF-Zero Solution:** Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer.
+Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer on $SU(2)$ or $SO(3)$.
+
+**The PSF-Zero Solution:** Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer.
 
 ### 3.8.2  3D Computer Graphics (Animation Interpolation)
 * **The Problem:** SLERP (Spherical Linear Interpolation) between keyframes can sometimes take the "long way around" or stutter if the quaternions are not perfectly aligned.
