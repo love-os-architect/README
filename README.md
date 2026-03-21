@@ -349,10 +349,23 @@ While classical SLAM violently crashes under these conditions, the PSF-Zero pipe
 * 📁 **[The Perception Overseer](./src/chaos_injector_imu.cpp)**: Real-time LiDAR projection and coverage metrics under extreme cornering.
 * 📊 **[The Geometric Proof (Python Visualizer)](./scripts/plot_phase_tester.py)**: Generate the $R \to 0$ phase-transition trajectory from your own local data.
 
-### 3.8.1 Manifold Optimization (Machine Learning)
-Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer on $SU(2)$ or $SO(3)$.
+### 3.8.1 Manifold Optimization (Machine Learning): The Geometric Surrender of Gradient Descent
 
-**The PSF-Zero Solution:** Applying the `/0` clamp to the gradient dynamically saturates the step size based on the manifold's curvature, acting as a geometric, hyper-stable Adam optimizer.
+**The Problem: The Euclidean Ego of Classical Optimizers**
+Modern Deep Learning optimizers (such as Adam and SGD) implicitly assume that the parameter space is a flat, Euclidean plane ($\mathbb{R}^n$). However, in advanced domains like 3D Computer Vision, Robotics SLAM, and Molecular Dynamics (e.g., EGNNs), the parameters often reside on highly curved non-Euclidean manifolds, such as $SO(3)$ (rotations) or $SU(2) \cong S^3$ (unit quaternions).
+
+When a classical optimizer encounters a steep gradient (a high-loss anomaly), its "ego" forces it to take a massive linear step. On a curved manifold, this massive straight step physically tears the parameter off the manifold. To fix this, classical systems rely on computationally heavy, brute-force re-orthonormalization, which destroys the learning momentum and frequently causes "unwinding"—taking the $> \pi$ long path around the sphere, resulting in catastrophic training instability.
+
+**The PSF-Zero Solution: Curvature-Aware Trust Regions via /0 Clamp**
+Instead of fighting the curvature, the Love-OS architecture geometrically surrenders to it. We introduce `GeoClampAdam`, a manifold-aware optimizer that replaces Euclidean brute force with topological synchrony:
+
+* **Tangent Projection (The "Now" State):** Gradients are pulled back to the local tangent space (the Lie algebra $\mathfrak{so}(3)$ or $\mathfrak{su}(2)$). The optimizer's momentum is accumulated strictly within the parameter's current geometric reality.
+* **/0 Geometric Clamp (Curvature Trust Radius):** The step size is dynamically saturated based on the Exponential Moving Average (EMA) of the gradient norm (a proxy for local curvature). If the gradient demands an update that exceeds the natural curvature (or risks unwinding past $\pi$), the `/0` clamp geometrically truncates the step radius while preserving its exact direction.
+* **Geodesic Exponential Map:** The saturated, safe step is perfectly mapped back onto the manifold using the exact exponential map (or an orthogonal retraction). 
+
+The result is a hyper-stable optimizer that never fights the manifold, eliminating the need for arbitrary gradient clipping and accelerating convergence on complex geometric topologies by ensuring every step is a minimal, frictionless arc ($R \to 0$).
+
+[geoclam_adam.py](https://github.com/love-os-architect/README/blob/main/docs/geoclam_adam.py)
 
 ### 3.8.2  3D Computer Graphics (Animation Interpolation)
 * **The Problem:** SLERP (Spherical Linear Interpolation) between keyframes can sometimes take the "long way around" or stutter if the quaternions are not perfectly aligned.
