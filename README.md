@@ -314,7 +314,7 @@ While classical SLAM violently crashes under these conditions, the PSF-Zero pipe
 
 **[ Explore the Implementation ]**
 [Autonomous Architecture.md](https://github.com/love-os-architect/README/blob/main/Autonomous%20Architecture.md)
-* 📁 **[The Perception Overseer](./src/eit_perception_debugger_node.cpp)**: Real-time LiDAR projection and coverage metrics under extreme cornering.
+* 📁 **[The Perception Overseer](./src/chaos_injector_imu.cpp)**: Real-time LiDAR projection and coverage metrics under extreme cornering.
 * 📊 **[The Geometric Proof (Python Visualizer)](./scripts/plot_phase_tester.py)**: Generate the $R \to 0$ phase-transition trajectory from your own local data.
 
 ### 3.8.1 Manifold Optimization (Machine Learning)
