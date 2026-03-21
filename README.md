@@ -313,9 +313,8 @@ This repository includes a dedicated **Viral Chaos Injector**. By intentionally 
 While classical SLAM violently crashes under these conditions, the PSF-Zero pipeline demonstrates an exponential return to $T_{now}$ within milliseconds, maintaining continuous, jitter-free LiDAR-to-Camera projections even during high-G cornering.
 
 **[ Explore the Implementation ]**
-* 📁 **[Core ROS2 Package (EIT + /0 + S³)](./psf_zero_eit/)**: The drop-in phase-alignment middleware for IMU/Camera/LiDAR.
-* 📁 **[The Perception Overseer](./psf_zero_eit/src/eit_perception_debugger_node.cpp)**: Real-time LiDAR projection and coverage metrics under extreme cornering.
-* 📁 **[HIL Chaos Injector & Phase Tester](./psf_zero_eit/launch/chaos_test.launch.py)**: The entropy generator that shatters legacy SLAM.
+[Autonomous Architecture.md](https://github.com/love-os-architect/README/blob/main/Autonomous%20Architecture.md)
+* 📁 **[The Perception Overseer](./src/eit_perception_debugger_node.cpp)**: Real-time LiDAR projection and coverage metrics under extreme cornering.
 * 📊 **[The Geometric Proof (Python Visualizer)](./scripts/plot_phase_tester.py)**: Generate the $R \to 0$ phase-transition trajectory from your own local data.
 
 ### 3.8.1 Manifold Optimization (Machine Learning)
