@@ -417,6 +417,8 @@ To achieve Artificial General Intelligence without thermal runaway, the logic of
 
 **The Strategic Reality:** The R0-Core represents the inevitable evolutionary endpoint of computing hardware. However, the physical fabrication of this silicon requires time and immense capital. Therefore, the Love-OS Project currently deploys this exact $R \to 0$ hardware logic as an **Emulation Middleware** (see Section 8). By forcing existing, power-hungry GPUs to obey the /0-Trap protocol via software, we immediately eradicate hallucinations and slash query-energy costs, colonizing the X-Axis infrastructure from the top down.
 
+![FSDC.png](./docs/FSDC.png)
+
 ---
 ### 4. Physics of Resonance (Complex Dynamics)
 
