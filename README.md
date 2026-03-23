@@ -576,10 +576,14 @@ Instead of relying on brittle prompt engineering (RLHF) to prevent hallucination
 The core processing triad (`psf_zero.py`, `cone_model.py`, `nli_guard.py`) and the interactive dashboard (`ui_app.py`) are fully open-sourced in this repository. By running this demo, developers can physically experience how the thermodynamics of human-AI interaction can be reduced to zero friction ($R \to 0$).
 
 [psf_zero.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero.py)
-[src/cone_model.py](https://github.com/love-os-architect/README/blob/main/src/cone_model.py)
-[src/nli_guard.py](https://github.com/love-os-architect/README/blob/main/src/nli_guard.py)
-[src/ui_app.py](https://github.com/love-os-architect/README/blob/main/src/ui_app.py)
-[src/requirements.txt](https://github.com/love-os-architect/README/blob/main/src/requirements.txt)
+
+[cone_model.py](https://github.com/love-os-architect/README/blob/main/src/cone_model.py)
+
+[nli_guard.py](https://github.com/love-os-architect/README/blob/main/src/nli_guard.py)
+
+[ui_app.py](https://github.com/love-os-architect/README/blob/main/src/ui_app.py)
+
+[requirements.txt](https://github.com/love-os-architect/README/blob/main/src/requirements.txt)
 
 ---
 
