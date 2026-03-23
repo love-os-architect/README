@@ -558,6 +558,8 @@ This is the ultimate evolution of the Love-OS concept, translated into a drop-in
 * **Born-Like Materialization Head:** Calibrates raw LLM confidence using Isotonic Regression into a true "Materialization Probability" ($p$). Only projects to reality (MATERIALIZE) if $p \ge \tau$, otherwise it gracefully yields (ABSTAIN).
 * **Executive Benchmarking Suite:** Built-in offline simulation tools generating Risk-Coverage curves and Expected Calibration Error (ECE) metrics to prove ROI instantly.
 
+[Hugging Face.py](https://github.com/love-os-architect/Trinity-Sphere-RAG-Middleware/blob/main/Hugging%20Face.py)
+
 ---
 
 ### 💎 Flagship Product 2: Love-OS Affective Engine (Interactive UI) 🚀
