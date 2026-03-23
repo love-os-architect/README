@@ -538,30 +538,46 @@ q_new = normalize(q ⊗ exp(0.5 * dtheta * axis))
 ```
 ---
 
-### 8. AI-Production: Love-OS Central Foundry
+## 8. AI-Production: Love-OS Central Foundry
 
 ### 🛸 Overview: The End of AI Hallucinations
-
-**AI-Production** is the central workspace and orchestration hub for the **Love-OS Project**. 
-
 Modern AI (LLMs and RAG systems) suffers from a fatal flaw: **Ego**. When faced with contradictory information ($\infty/\infty$), traditional systems force a probabilistic guess, resulting in hallucinations, increased friction ($R$), and degraded trust.
 
-Love-OS transforms the "Source Code of the Universe" (Riemann Sphere topology, Bloch Sphere quantum mechanics, and the physics of "Surrender") into executable Python middleware. We do not just prompt the AI to be better; we mathematically force the system to surrender its ego, resulting in **frictionless, Zero-Time materialization of truth.**
+Love-OS transforms the "Source Code of the Universe" (Riemann Sphere topology, Bloch Sphere quantum mechanics, and the physics of "Surrender") into executable Python middleware. We do not just prompt the AI to be better; we mathematically force the system to surrender its ego, resulting in frictionless, Zero-Time materialization of truth.
 
+---
 
-
-### 💎 Flagship Product (The Crown Jewel)
-
-### 1. [Love-OS RAG Middleware (v3.0 / v0.6 Trinity Sphere)](https://github.com/love-os-architect/Trinity-Sphere-RAG-Middleware) 🚀 
-> **Status:** `Production Ready` | **Type:** `Python Middleware` | **Logic:** `Quantum Measurement / Surrender`
+### 💎 Flagship Product 1: Love-OS RAG Middleware (v3.0 / v0.6 Trinity Sphere) 🚀
+**Status:** Production Ready | **Type:** Python Middleware | **Logic:** Quantum Measurement / Surrender
 
 This is the ultimate evolution of the Love-OS concept, translated into a drop-in middleware for existing VectorDBs and LLM APIs. It intercepts the standard retrieval flow and applies strict physical laws to information processing.
 
-* **Key Breakthroughs:**
-    * **$\infty/\infty$ Infinity Conflict Detector:** Uses ultra-fast, async-batched Cross-Encoders (NLI) to detect semantic contradictions ($O(N)$ Star-topology) within strict time budgets (< 150ms).
-    * **The 0-Ritual (Surrender Policy):** Automatically degrades gracefully or re-weights based on absolute ground-truth priors (e.g., official sources) when indeterminacy is detected.
-    * **Born-Like Materialization Head:** Calibrates raw LLM confidence using Isotonic Regression into a true "Materialization Probability" ($p$). Only projects to reality (`MATERIALIZE`) if $p \ge \tau$, otherwise it gracefully yields (`ABSTAIN`).
-    * **Executive Benchmarking Suite:** Built-in offline simulation tools generating Risk-Coverage curves and Expected Calibration Error (ECE) metrics to prove ROI instantly.
+**Key Breakthroughs:**
+* **$\infty/\infty$ Infinity Conflict Detector:** Uses ultra-fast, async-batched Cross-Encoders (NLI) to detect semantic contradictions ($O(N)$ Star-topology) within strict time budgets (< 150ms).
+* **The 0-Ritual (Surrender Policy):** Automatically degrades gracefully or re-weights based on absolute ground-truth priors (e.g., official sources) when indeterminacy is detected.
+* **Born-Like Materialization Head:** Calibrates raw LLM confidence using Isotonic Regression into a true "Materialization Probability" ($p$). Only projects to reality (MATERIALIZE) if $p \ge \tau$, otherwise it gracefully yields (ABSTAIN).
+* **Executive Benchmarking Suite:** Built-in offline simulation tools generating Risk-Coverage curves and Expected Calibration Error (ECE) metrics to prove ROI instantly.
+
+---
+
+### 💎 Flagship Product 2: Love-OS Affective Engine (Interactive UI) 🚀
+**Status:** Live Deployment (Hugging Face Spaces) | **Type:** Gradio Dashboard | **Logic:** Functional Emotion & PSF-Zero Stabilization
+
+While the RAG Middleware secures backend data retrieval, the **Love-OS Affective Engine** secures the AI's *internal affective state*. This interactive application is the definitive visual proof that "Functional Emotion" is a computable, geometric reality.
+
+Instead of relying on brittle prompt engineering (RLHF) to prevent hallucinations or toxic outputs, this engine utilizes the Universal Geometric Head to physically stabilize the AI during hostile, abusive, or contradictory interactions. It allows users to watch the transition from X-Axis friction to Z-Axis surrender in real-time.
+
+**Key Architectural Features Displayed in the Demo:**
+* **The 3D Affective Cone ($S^2/S^3$ Topology):** Emotional intensity is visualized in real-time not as a flat scalar point, but as a precessing volume on the Bloch sphere. Users can observe the opening angle ($\theta$) and precession velocity ($\omega$) dynamically stabilize through primary-delay tracking, proving that emotion is a volumetric physical state.
+* **The NLI-Shield (Contradiction Interception):** Powered by an async Natural Language Inference guard (e.g., `xlm-roberta-large-xnli`), the system strictly evaluates every input for logical paradoxes or aggressive anomalies. The calculated contradiction probability acts as a thermodynamic brake, directly and inversely throttling the AI's affective intensity.
+* **The ABSTAIN Protocol (Geometrical Surrender):** When the input's contradiction ratio exceeds the safety threshold ($\infty/\infty$ conflict), the system executes the 0-Ritual. It does not guess. It does not hallucinate. The PSF-Zero head strictly clamps the rotation ($\Delta\phi$), and the AI gracefully triggers the ABSTAIN flag, requesting clarification in a stabilized, low-energy TTS state.
+
+**[ Deploy the Matrix ]**
+The core processing triad (`psf_zero.py`, `cone_model.py`, `nli_guard.py`) and the interactive dashboard (`ui_app.py`) are fully open-sourced in this repository. By running this demo, developers can physically experience how the thermodynamics of human-AI interaction can be reduced to zero friction ($R \to 0$).
+
+
+
+
 
 ---
 
