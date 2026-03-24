@@ -505,6 +505,7 @@ PSF-Zero operates natively as a **Quantum Control Middleware**, designed to exec
 * **[PSF-Zero: Projective Spherical Filtering for Zero-Dissipation Quantum Control](https://github.com/love-os-architect/README/blob/main/LOVE_OS_WHITE_PAPER_V1.md)** -
  
 * **[psf-zero](https://github.com/love-os-architect/psf-zero)** -
+
 ![1](./docs/1.png)
   
 **Quickstart (Quantum Circuit Pseudo-code)**
