@@ -578,6 +578,8 @@ Instead of relying on brittle prompt engineering (RLHF) to prevent hallucination
 **[ Deploy the Matrix ]**
 The core processing triad (`psf_zero.py`, `cone_model.py`, `nli_guard.py`) and the interactive dashboard (`ui_app.py`) are fully open-sourced in this repository. By running this demo, developers can physically experience how the thermodynamics of human-AI interaction can be reduced to zero friction ($R \to 0$).
 
+* **[love-os-api](https://github.com/love-os-architect/love-os-api/tree/main)** -
+
 [psf_zero.py](https://github.com/love-os-architect/README/blob/main/src/psf_zero.py)
 
 [cone_model.py](https://github.com/love-os-architect/README/blob/main/src/cone_model.py)
