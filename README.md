@@ -31,7 +31,7 @@ Love-OS does not treat $/0$ as an error. Through **Projective Spherical Filterin
 
 　Einstein died trying to eliminate the infinite from his unified field theory. Love-OS completes the theory by embracing it.
 
- ![love_os_trajectory](./docs/love_os_trajectory.png)
+ ![Performance Benchmark](./docs/12.png)
 
  ### Figure 1: Beyond the Einsteinian Singularity — The Phase Transition to Love-OS
 
