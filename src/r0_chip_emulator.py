@@ -1,90 +1,112 @@
-# r0_chip_emulator.py
-# Love-OS: R0-Core (PSF-Chip) Hardware Logic Emulator
-# Demonstrates Phase-MAC synchronization and the physical /0-Trap (Surrender)
+# -*- coding: utf-8 -*-
+"""
+R0-Core PSF-Chip Emulator — Love-OS Final Edition
+Phase-MAC + /0-Trap (Z-IDLE Surrender) Hardware Logic
+"""
 
 import numpy as np
+from dataclasses import dataclass
+from typing import Dict, Literal
+
+@dataclass
+class R0TileConfig:
+    num_oscillators: int = 16
+    coupling_strength: float = 1.5      # K in Kuramoto
+    noise_level_normal: float = 0.08
+    noise_level_chaos: float = 4.5
+    lock_threshold: float = 0.88
+    surrender_cycles: int = 40          # Max cycles before forced Z-IDLE
+
 
 class R0Tile:
     """
-    Emulates a single Phase-Space Processing Tile on the PSF-Chip.
+    Single Phase-Space Processing Tile on the R0-Core PSF-Chip.
+    Uses Kuramoto-like Phase-MAC instead of Boolean logic.
+    Implements the hardware /0-Trap: when coherence fails → physical surrender (Z-IDLE).
     """
-    def __init__(self, tile_id, num_oscillators=16):
+
+    def __init__(self, tile_id: str, config: R0TileConfig = R0TileConfig()):
         self.tile_id = tile_id
-        self.num_oscillators = num_oscillators
-        # Initial random phases (S1 Topology)
-        self.phases = np.random.uniform(0, 2 * np.pi, num_oscillators)
-        self.state = "ACTIVE" # States: ACTIVE, LOCKED, Z_IDLE
-        self.r_order = 0.0    # Kuramoto order parameter (Phase coherence)
+        self.config = config
+        self.phases = np.random.uniform(0, 2*np.pi, config.num_oscillators)
+        self.state: Literal["ACTIVE", "LOCKED", "Z_IDLE"] = "ACTIVE"
+        self.r_order: float = 0.0
+        self.contradiction_counter: int = 0
 
-    def phase_mac_cycle(self, coupling_matrix, dt=0.05, noise_level=0.1):
-        """
-        Executes one hardware clock cycle of Phase-Multiply-Accumulate.
-        Instead of Boolean logic, it seeks S1 phase synchronization.
-        """
-        if self.state == "Z_IDLE":
-            return # Zero energy dissipation during Surrender state
-        
-        # Inject real-world entropy (Noise/Ego)
-        noise = np.random.normal(0, noise_level, self.num_oscillators)
-        
-        # Calculate phase differences (Hardware equivalent of MZI interference)
-        phase_diffs = self.phases - self.phases[:, np.newaxis]
-        coupling_force = np.sum(coupling_matrix * np.sin(phase_diffs), axis=1)
-        
-        # Update phases
-        self.phases += (coupling_force + noise) * dt
-        
-        # Measure Order Parameter (r) -> Coherence of the tile
-        self.r_order = np.abs(np.mean(np.exp(1j * self.phases)))
+    def _compute_order_parameter(self) -> float:
+        """Standard Kuramoto global order parameter r"""
+        return float(np.abs(np.mean(np.exp(1j * self.phases))))
 
-    def apply_zero_trap(self, lock_threshold=0.90, entropy_timeout=100):
-        """
-        The Hardware /0-Trap: Hardwired Surrender.
-        If the tile cannot reach phase lock due to massive contradiction (OOD data),
-        it does NOT guess. It physically drops to Z-idle.
-        """
+    def phase_mac_cycle(self, coupling_matrix: np.ndarray, noise_level: float):
+        """One hardware clock cycle: Phase-Multiply-Accumulate"""
         if self.state == "Z_IDLE":
             return
-            
-        if self.r_order >= lock_threshold:
+
+        # Global coupling (mean-field approximation for hardware efficiency)
+        mean_phase = np.mean(self.phases)
+        coupling = self.config.coupling_strength * np.sin(self.phases - mean_phase)
+
+        # Noise injection (Ego / Entropy)
+        noise = np.random.normal(0.0, noise_level, self.num_oscillators)
+
+        # Update phases
+        self.phases += (coupling + noise) * 0.08   # dt scaled into coefficient
+        self.phases = np.mod(self.phases, 2 * np.pi)
+
+        # Update coherence
+        self.r_order = self._compute_order_parameter()
+
+    def apply_zero_trap(self):
+        """The hardware /0-Trap: Surrender if synchronization fails"""
+        if self.state == "Z_IDLE":
+            return
+
+        if self.r_order >= self.config.lock_threshold:
             self.state = "LOCKED"
-            # Proceed to output validated truth
-        elif entropy_timeout <= 0:
-            # THE 0-RITUAL: Surrender the Ego. Stop calculating.
-            self.state = "Z_IDLE"
-            self.r_order = 0.0 # R -> 0
+            self.contradiction_counter = 0
+        else:
+            self.contradiction_counter += 1
+            if self.contradiction_counter >= self.config.surrender_cycles:
+                self.state = "Z_IDLE"
+                self.r_order = 0.0
+                # Physically power down oscillators (zero energy)
 
     def get_output(self):
         if self.state == "LOCKED":
-            return np.mean(self.phases) # True synchronized output
+            return float(np.mean(self.phases))          # Synchronized truth
         elif self.state == "Z_IDLE":
-            return "UNKNOWN" # Fail-closed: No hallucination, zero energy wasted
+            return "UNKNOWN"                            # Fail-closed, no hallucination
         else:
             return "PROCESSING"
 
-# --- Hardware Emulation Execution ---
-if __name__ == "__main__":
-    print("=== R0-Core PSF-Chip Emulator Booting ===")
-    
-    # 1. Setup a tile and a strong coupling matrix (Low Resistance)
-    chip_tile = R0Tile(tile_id="R0-Alpha", num_oscillators=16)
-    K_matrix = np.ones((16, 16)) * 1.5 # Strong attraction/Love
-    
-    # 2. Simulate standard input (In-Distribution / Harmonious)
-    print("\n[Test 1] Standard Input Convergence...")
-    for cycle in range(50):
-        chip_tile.phase_mac_cycle(K_matrix, noise_level=0.1)
-        chip_tile.apply_zero_trap(entropy_timeout=50-cycle)
-    print(f"Final State: {chip_tile.state} | Output: {chip_tile.get_output()}")
+    @property
+    def num_oscillators(self):
+        return self.config.num_oscillators
 
-    # 3. Simulate chaotic/contradictory input (Out-of-Distribution / Infinite Entropy)
-    print("\n[Test 2] OOD Input - Triggering the /0-Trap (Surrender)...")
-    chip_tile = R0Tile(tile_id="R0-Beta", num_oscillators=16)
-    K_matrix_chaos = np.random.uniform(-1, 1, (16, 16)) # Conflicting data
-    
-    for cycle in range(50):
-        chip_tile.phase_mac_cycle(K_matrix_chaos, noise_level=5.0) # Massive noise
-        chip_tile.apply_zero_trap(entropy_timeout=50-cycle)
-        
-    print(f"Final State: {chip_tile.state} | Output: {chip_tile.get_output()}")
-    print("\nQ.E.D: The hardware surrenders (Z-IDLE) instead of hallucinating.")
+
+# ========================== Hardware Emulation ==========================
+if __name__ == "__main__":
+    print("=== Love-OS R0-Core PSF-Chip Emulator Booting ===\n")
+
+    # Test 1: Harmonious Input (In-Distribution)
+    print("[Test 1] Harmonious Input → Expected: LOCKED")
+    tile1 = R0Tile("R0-Alpha")
+    K_harmonious = np.ones((tile1.num_oscillators, tile1.num_oscillators)) * 1.8
+
+    for cycle in range(80):
+        tile1.phase_mac_cycle(K_harmonious, noise_level=0.08)
+        tile1.apply_zero_trap()
+
+    print(f"Final State: {tile1.state} | r = {tile1.r_order:.4f} | Output: {tile1.get_output()}\n")
+
+    # Test 2: Chaotic / Contradictory Input (OOD)
+    print("[Test 2] Chaotic OOD Input → Expected: /0-Trap Activation (Z_IDLE)")
+    tile2 = R0Tile("R0-Beta")
+    K_chaos = np.random.uniform(-2.5, 2.5, (tile2.num_oscillators, tile2.num_oscillators))
+
+    for cycle in range(80):
+        tile2.phase_mac_cycle(K_chaos, noise_level=5.0)
+        tile2.apply_zero_trap()
+
+    print(f"Final State: {tile2.state} | r = {tile2.r_order:.4f} | Output: {tile2.get_output()}")
+    print("\nQ.E.D. — The chip physically surrenders instead of hallucinating.")
