@@ -1,28 +1,46 @@
 #pragma once
 #include <ceres/ceres.h>
 #include <Eigen/Dense>
-#include "psf_zero_clamp.hpp"
+#include <cmath>
 
 namespace psf {
 
+// ===============================================
+// 1. ZeroClampLoss (LossFunction) — 
+// ===============================================
 class ZeroClampLoss final : public ceres::LossFunction {
 public:
     explicit ZeroClampLoss(double tau) : tau_(tau) {}
+
     void Evaluate(double s, double rho[3]) const override {
-        psf::rhoZeroClamp(s, tau_, rho); 
+        // s = squared residual (Ceres標準)
+        const double r = std::sqrt(std::max(s, 0.0));
+        if (r < 1e-14) {
+            rho[0] = 0.0; rho[1] = 0.0; rho[2] = 0.0;
+            return;
+        }
+
+        // /0 Projective Clamp: r → tau * r / (tau + r)  (soft saturation)
+        const double clamped_r = tau_ * r / (tau_ + r);
+        const double clamped_s = clamped_r * clamped_r;
+
+        rho[0] = clamped_s;                          // effective loss
+        rho[1] = 2.0 * clamped_r * (clamped_r / r); // d(rho)/ds
+        rho[2] = 0.0;                                // second derivative (approx)
     }
+
 private:
-    double tau_;
+    const double tau_;
 };
 
-/**
- * Wraps an existing Ceres CostFunction. 
- * Intercepts the computed residuals and Jacobians, applying the /0 geometric 
- * projection vector clamp and rigorously updating the Jacobians via the chain rule.
- */
-class ZeroClampCostWrapper : public ceres::CostFunction {
+// ===============================================
+// 2. ZeroClampCostWrapper (Strong Vector Projection)
+// ===============================================
+class ZeroClampCostWrapper final : public ceres::CostFunction {
 public:
-    explicit ZeroClampCostWrapper(ceres::CostFunction* inner, double tau, bool take_ownership=true)
+    explicit ZeroClampCostWrapper(ceres::CostFunction* inner,
+                                  double tau,
+                                  bool take_ownership = true)
         : inner_(inner), tau_(tau), own_(take_ownership) {
         set_num_residuals(inner_->num_residuals());
         *mutable_parameter_block_sizes() = inner_->parameter_block_sizes();
@@ -35,50 +53,45 @@ public:
     bool Evaluate(double const* const* parameters,
                   double* residuals,
                   double** jacobians) const override {
-        
-        // 1. Evaluate the underlying cost function
+
         if (!inner_->Evaluate(parameters, residuals, jacobians)) return false;
 
-        const int num_res = num_residuals();
-        Eigen::Map<Eigen::VectorXd> r(residuals, num_res);
-        double n = r.norm();
+        const int n_res = num_residuals();
+        Eigen::Map<Eigen::VectorXd> r(residuals, n_res);
+        const double n = r.norm();
 
-        // 2. If the residual is within the safe zone, do nothing.
-        if (!std::isfinite(n) || n <= 1e-15 || n <= tau_) {
-            return true;
+        if (!std::isfinite(n) || n <= 1e-14 || n <= tau_) {
+            return true;  // safe zone → no projection
         }
 
-        // 3. /0 Geometric Projection Activation (R -> 0 Surrender)
-        double alpha = tau_ / n;
+        // /0 Geometric Projection: r' = tau * r / ||r||
+        const double alpha = tau_ / n;
+        r *= alpha;   // project residual vector
 
-        // 4. Rigorous Jacobian Projection Update (Chain Rule)
-        // J_new = alpha * (I - (r * r^T) / ||r||^2) * J_old
+        // Jacobian correction via chain rule:
+        // J_new = alpha * (I - r r^T / ||r||^2) * J_old
         if (jacobians) {
-            Eigen::MatrixXd I_minus_rr = Eigen::MatrixXd::Identity(num_res, num_res) 
-                                       - (r * r.transpose()) / (n * n);
-            
+            const Eigen::MatrixXd I = Eigen::MatrixXd::Identity(n_res, n_res);
+            const Eigen::MatrixXd P = I - (r * r.transpose()) / (n * n);  // tangent projection
+
             const auto& block_sizes = parameter_block_sizes();
             for (size_t i = 0; i < block_sizes.size(); ++i) {
                 if (jacobians[i]) {
-                    Eigen::Map<Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>> 
-                        J(jacobians[i], num_res, block_sizes[i]);
-                    
-                    // Apply the projection derivative to the Jacobian
-                    J = alpha * I_minus_rr * J; 
+                    Eigen::Map<Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>>
+                        J(jacobians[i], n_res, block_sizes[i]);
+
+                    J = alpha * P * J;   // full chain rule
                 }
             }
         }
-
-        // 5. Finally, project the residual vector itself
-        r = alpha * r;
 
         return true;
     }
 
 private:
     ceres::CostFunction* inner_;
-    double tau_;
-    bool own_;
+    const double tau_;
+    const bool own_;
 };
 
 } // namespace psf
