@@ -1,52 +1,116 @@
-```python
 # -*- coding: utf-8 -*-
 """
 psd_to_rms_phase.py
-Extracts RMS phase noise (\sigma_\phi) from physical optical network telemetry.
+Love-OS Optical Phase Noise Analyzer — PSF-Zero Edition
+
+Extracts RMS phase noise (σ_φ) from physical optical telemetry while applying
+/0 projective regularization to suppress outlier spikes and divergent noise.
 """
+
 import numpy as np
 import pandas as pd
 from scipy import signal
+from dataclasses import dataclass
+from typing import Tuple, Optional, Dict
 
-def rms_from_timeseries(csv_path, fmin=1.0, fmax=50e3, fs=None):
+@dataclass
+class PhaseNoiseConfig:
+    fmin: float = 1.0          # [Hz] Lower integration limit
+    fmax: float = 50e3         # [Hz] Upper integration limit
+    tau: float = 1.0           # /0 projection strength (smaller = stronger clamping)
+    detrend: bool = True
+    window: str = 'hann'
+    nperseg: Optional[int] = None
+
+
+def zero_clamp(x: np.ndarray, tau: float = 1.0) -> np.ndarray:
+    """ /0 Projective Clamp: safely bounds large values (prevents divergence) """
+    x = np.asarray(x, dtype=float)
+    return x / np.sqrt(1.0 + (x / tau)**2)
+
+
+def rms_phase_from_timeseries(csv_path: str, 
+                              config: PhaseNoiseConfig = PhaseNoiseConfig()) -> Dict:
     """
-    Reads time-series phase data and calculates RMS phase noise via Welch's PSD.
-    Expected CSV format: t[s], phi[rad]
+    Compute RMS phase noise from raw time-series phase data (t, phi).
+    Applies /0 clamping to suppress outlier spikes before PSD integration.
     """
     df = pd.read_csv(csv_path)
     t = df.iloc[:, 0].values
     phi = df.iloc[:, 1].values
-    
-    if fs is None:
-        dt = np.median(np.diff(t))
-        fs = 1.0 / dt
 
-    # Detrend & Windowed PSD (Welch)
-    phi_d = signal.detrend(phi, type='linear')
-    nperseg = min(len(phi_d), 2**14)
-    f, Pxx = signal.welch(phi_d, fs=fs, window='hann', nperseg=nperseg, noverlap=nperseg//2)
+    # Estimate sampling frequency
+    dt = np.median(np.diff(t))
+    fs = 1.0 / dt if dt > 0 else 1e6
 
-    # Band Integration (Default: 1Hz to 50kHz)
-    band = (f >= fmin) & (f <= fmax)
-    sigma = np.sqrt(np.trapz(Pxx[band], f[band]))
+    # Detrend
+    phi_d = signal.detrend(phi, type='linear') if config.detrend else phi
 
-    return sigma, (f, Pxx)
+    # /0 Projective Clamping on raw phase deviations (prevents spike dominance)
+    phi_clamped = zero_clamp(phi_d, tau=config.tau)
 
-def rms_from_psd(csv_path, fmin=1.0, fmax=50e3):
+    # Welch PSD
+    nperseg = config.nperseg or min(len(phi_clamped), 2**14)
+    f, Pxx = signal.welch(phi_clamped, fs=fs, window=config.window,
+                          nperseg=nperseg, noverlap=nperseg//2, scaling='density')
+
+    # Band-limited RMS integration
+    band = (f >= config.fmin) & (f <= config.fmax)
+    if not np.any(band):
+        raise ValueError("No frequency content in the specified band.")
+
+    sigma_rad = np.sqrt(np.trapz(Pxx[band], f[band]))
+    sigma_deg = np.degrees(sigma_rad)
+
+    return {
+        "rms_rad": float(sigma_rad),
+        "rms_deg": float(sigma_deg),
+        "fs": float(fs),
+        "fmin": config.fmin,
+        "fmax": config.fmax,
+        "tau": config.tau,
+        "n_samples": len(phi),
+        "status": "OK"
+    }
+
+
+def rms_phase_from_psd(csv_path: str, 
+                       config: PhaseNoiseConfig = PhaseNoiseConfig()) -> Dict:
     """
-    Reads pre-calculated PSD data and calculates RMS phase noise.
-    Expected CSV format: f[Hz], S_phi[rad^2/Hz]
+    Compute RMS phase noise directly from pre-calculated PSD (f, S_phi).
     """
     df = pd.read_csv(csv_path)
     f = df.iloc[:, 0].values
     Sphi = df.iloc[:, 1].values
-    
-    band = (f >= fmin) & (f <= fmax)
-    sigma = np.sqrt(np.trapz(Sphi[band], f[band]))
-    return sigma
+
+    band = (f >= config.fmin) & (f <= config.fmax)
+    if not np.any(band):
+        raise ValueError("No frequency content in the specified band.")
+
+    sigma_rad = np.sqrt(np.trapz(Sphi[band], f[band]))
+    sigma_deg = np.degrees(sigma_rad)
+
+    return {
+        "rms_rad": float(sigma_rad),
+        "rms_deg": float(sigma_deg),
+        "fmin": config.fmin,
+        "fmax": config.fmax,
+        "status": "OK"
+    }
+
 
 if __name__ == "__main__":
-    # Example Usage (Uncomment and replace with actual data files)
-    print("Love-OS: Optical PSD to RMS Phase Converter initialized.")
-    # sigma_ts, _ = rms_from_timeseries("telemetry_phase.csv", fmin=1.0, fmax=50e3)
-    # print(f"Measured RMS Phase (1-50kHz): {np.degrees(sigma_ts):.2f} deg ({sigma_ts:.4e} rad)")
+    print("Love-OS Optical Phase Noise Analyzer (PSF-Zero Edition)")
+    print("=" * 65)
+
+    # Example usage (uncomment and set your file)
+    # result = rms_phase_from_timeseries(
+    #     "optical_telemetry_phase.csv",
+    #     config=PhaseNoiseConfig(fmin=1.0, fmax=100e3, tau=0.8)
+    # )
+
+    # print(f"RMS Phase Noise : {result['rms_deg']:.4f} deg  ({result['rms_rad']:.2e} rad)")
+    # print(f"Integration band: {result['fmin']:.1f} – {result['fmax']/1e3:.1f} kHz")
+    # print(f"/0 Clamp strength (tau): {result['tau']}")
+
+    print("Module loaded successfully. Ready for Genesis Axis extraction.")
