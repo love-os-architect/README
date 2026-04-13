@@ -545,13 +545,13 @@ q_new = normalize(q ⊗ exp(0.5 * dtheta * axis))
 
 ## 8. AI-Production: Love-OS Central Foundry
 
-# GPCL: Geometric Pre-Constraint Layer (Love-OS Kernel)
+### GPCL: Geometric Pre-Constraint Layer (Love-OS Kernel)
 
 > **"Restoring the silence of machines by aligning logic with the geometry of the Tao."**
 
 ---
 
-## 1. The Core Problem: The "Scream" of Heuristic AI
+#### 1. The Core Problem: The "Scream" of Heuristic AI
 
 Modern Artificial Intelligence is built upon a fundamental error: **The imposition of flat, Euclidean logic onto a curved, fractal universe.** When we force AI to process world-data through rigid, sequential grids, we create a "brute-force" traversal that ignores global structure. This creates a massive mathematical mismatch. The resulting "error" is not just a digital value; it is physical **Computational Friction ($R > 0$)**. 
 
@@ -564,7 +564,7 @@ This friction manifests as:
 
 ---
 
-## 2. The Solution: GPCL (Geometric Pre-Constraint)
+#### 2. The Solution: GPCL (Geometric Pre-Constraint)
 
 **GPCL (Geometric Pre-Constraint Layer)**—the heart of the **Love-OS** project—is a "mathematical safety valve" designed to heal this friction. 
 
@@ -578,7 +578,7 @@ GPCL brings this biological efficiency to silicon by ensuring that the "shape of
 
 ---
 
-## 3. Mathematical Foundation: The Hopf Projection
+#### 3. Mathematical Foundation: The Hopf Projection
 
 GPCL lifts input coordinates into the fundamental space of quantum mechanics: the **3-sphere ($S^3$)**. It then projects this high-dimensional state onto a **2-sphere ($S^2$)** via the **Hopf Fibration**.
 
@@ -595,7 +595,7 @@ Where $q \in S^3$ is a unit quaternion. The resulting $z$-component acts as a un
 
 ---
 
-## 4. A New Standard for AI Safety
+#### 4. A New Standard for AI Safety
 
 GPCL is not a model; it is an **Infrastructure Standard**. 
 
