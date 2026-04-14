@@ -614,6 +614,8 @@ We are moving from a world of **"Arrogant Logic"** (forced, hot, and frictional)
 
 [gpcl_kernel.py](https://github.com/love-os-architect/AI-Production/blob/main/gpcl_kernel.py)
 
+[GPCL: Geometric Pre-Constraint Layer](https://github.com/love-os-architect/AI-Production/blob/main/README.md)
+
 ---
 
 ### 🛸 Overview: The End of AI Hallucinations
