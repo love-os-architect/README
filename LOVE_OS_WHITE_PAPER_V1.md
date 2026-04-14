@@ -4,7 +4,6 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Qiskit Compatible](https://img.shields.io/badge/Qiskit-Compatible-6929C4.svg)](https://qiskit.org/)
 [![PennyLane Ready](https://img.shields.io/badge/PennyLane-Ready-00D1B2.svg)](https://pennylane.ai/)
-[![Qiskit Ecosystem](https://img.shields.io/badge/Qiskit-Ecosystem-purple)](https://qiskit.org/ecosystem)
 
 ## 🌌 Abstract: Overcoming the Topological Mismatch
 The primary bottleneck in current NISQ (Noisy Intermediate-Scale Quantum) algorithms (e.g., VQE, QAOA, pulse shaping) lies in the **topological mismatch between quantum states (spherical geometry) and classical optimizers (flat Euclidean space)**. Standard gradient-based parameter updates on a flat space inevitably cause gradient explosions, parameter divergence, and massive computational overhead due to constant renormalization.
