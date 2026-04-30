@@ -702,6 +702,13 @@ The Commercial License includes the following production-ready plugins and suppo
 * Audit logging system designed for medical and critical infrastructure
 * Integration support for existing control toolchains (e.g., Qiskit, PennyLane)
 
+---
+### 🤝 Collaboration & Licensing
+This project is managed by **TN Holdings LLC**. We welcome academic collaborations, enterprise integration, and licensing inquiries.
+
+
+---
+
 
 > **Disclaimer:** This project is based on "Extended Physics." It proposes that human consciousness and social relational dynamics are isomorphic to fundamental thermodynamic and quantum mechanical laws.
 >
