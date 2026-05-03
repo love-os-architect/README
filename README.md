@@ -12,8 +12,8 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Qiskit Compatible](https://img.shields.io/badge/Qiskit-Compatible-6929C4.svg)](https://qiskit.org/)
 [![PennyLane Ready](https://img.shields.io/badge/PennyLane-Ready-00D1B2.svg)](https://pennylane.ai/)
-
-
+[![Rust Core](https://img.shields.io/badge/Core-Rust_Native-E34F26.svg?logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![PyO3 Binding](https://img.shields.io/badge/FFI-PyO3-blue.svg)](https://pyo3.rs/)
 
 ## The Final Theory of Integrated Physics and Consciousness 
 **Version 1.0: “The Genesis Axis” Deployment**
